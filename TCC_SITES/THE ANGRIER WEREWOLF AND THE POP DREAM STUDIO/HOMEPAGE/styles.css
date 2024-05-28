@@ -1,0 +1,1381 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: black;
+    margin: 0;
+    width: 100vw;
+}
+
+.container-fluid
+{
+    width: 100%;
+    margin: 0;;
+}
+
+a
+{
+    text-decoration: none;
+    color:white;
+}
+
+h1
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+}
+
+h2
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+
+h3
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+h4, ul  /* ^ Modificado: 09/05/2024 ^ */
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+}
+
+h5
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+}
+
+p
+{
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 14px;
+}
+
+li
+{
+    line-height: 30px;
+}
+
+ol
+{
+    color: white;
+    font-size: 20px;
+}
+
+/* * -------------------------------------------------- BACKGROUND -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 02/05/2024 ^ */
+/* ^ Adaptado do site: codepen.io ^ */
+/* ^ Modificado: 09/05/2024 ^ */
+
+.stars_background 
+{
+    position: absolute;
+    width: 100vw;
+    height: 1390%; /* ajustar conforme o tamanho da página*/
+    background: radial-gradient(
+    ellipse at bottom,
+    rgb(54, 106, 138),
+    rgb(9, 9, 9)
+    );
+    z-index: -2;
+}
+
+.stars 
+{
+    z-index: -2;
+    background-size: cover;
+    animation: move-twink-back 600s linear infinite;
+}
+
+.layer 
+{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 1390%;   /* ajustar conforme o tamanho da página*/
+    background: url("./RECURSOS/Imagens/Background/stars_big.png");
+}
+
+@keyframes move-twink-back 
+{
+    from 
+    {
+        background-position: 0 0;
+    }
+    to 
+    {
+        background-position: 0 -5000px;
+    }
+}
+
+.stars_2 
+{
+    z-index: -2;
+    background-size: cover;
+    animation: move-twink-back 400s linear infinite;
+    opacity: 0.2;
+}
+
+.stars_3 
+{
+    z-index: -2;
+    background-size: cover;
+    animation: move-twink-back 300s linear infinite;
+    opacity: 0.1;
+}
+
+/* * -------------------------------------------------- HEADER -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 02/05/2024 ^ */
+/* ^ Modificado: 09/05/2024 ^ */
+
+.header_logo_text
+{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+}
+
+.header_box_1
+{
+    display: flex;
+    margin: 0;
+    margin-left: 1%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 20%;
+}
+
+.werewolf_logo_solo
+{
+    width: 100%;
+    object-fit: cover;
+    -webkit-filter: drop-shadow(3px 3px 4px #009ff0) drop-shadow(-3px -3px 4px #009ff0);
+    filter: drop-shadow(3px 3px 4px #009ff0) drop-shadow(-3px -3px 4px #009ff0); 
+    margin-bottom: 2%;
+}
+
+.header_box_right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0;
+    margin-left: 1%;
+}
+
+
+
+.header_box_2
+{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.header_text 
+{
+    font-family: "Ceviche One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    -webkit-filter: drop-shadow(1px 4px 1px #009ff0) drop-shadow(-3px -4px 2px #009ff0);
+    filter: drop-shadow(1px 4px 1px #009ff0) drop-shadow(-3px -4px 2px #009ff0);
+    margin: 0;
+    margin-top: 1%;
+}
+
+.header_box_3
+{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.header_line_1
+{
+    display: flex;
+    width: 96%;
+    background-color: #009ff0;
+    height: 5px;
+    border-radius: 12px;
+    -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    margin: 0;
+    margin-top: 2%;
+}
+
+.header_line_2
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    align-content:flex-end;
+    text-align:right;
+    width: 98%;
+    background-color: #009ff0;
+    height: 5px;
+    border-radius: 12px;
+    margin: 0;
+    margin-left: -2%;
+    margin-bottom: 1%;
+    -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+}
+
+.header_menu_buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1px;
+    width: 100%;
+    margin: 1%;
+}
+
+.btn_WEREWOLF
+{
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    z-index: 5;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    background-color: transparent;
+    border-radius: 12px;
+    border: none
+}
+
+.btn_WEREWOLF:hover
+{
+    -webkit-filter: drop-shadow(1px 1px 1px #009ff0) drop-shadow(-1px -1px 1px #009ff0);
+    filter: drop-shadow(1px 1px 1px #009ff0) drop-shadow(-1px -1px 1px #009ff0);
+    background: rgba(88, 83, 83, 0.25);
+    box-shadow: 0 1px 2px 0 #009ff0;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 15px;
+    border: 1px solid rgba(155, 140, 140, 0.15);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .header_box_right
+    {
+        width: 96%;
+        margin: 2%;
+        padding: 1%;
+    }
+
+    .header_logo_text,
+    .header_menu_buttons
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 0
+    }
+}
+
+/* * ------------------------------------------------- UP_ARROW ------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 05/05/2024 ^ */
+
+.Up_Arrow
+{
+    width: 3%;
+    transform: translate(3228%, 750%);
+    position: fixed;
+}
+
+.Up_Arrow:hover
+{
+    filter: drop-shadow(1px 1px 1px #009ff0) drop-shadow(-1px -1px 1px #009ff0);
+}
+
+/* * -------------------------------------------------- HERO_1 -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 02/05/2024 ^ */
+
+.hero_1
+{
+    z-index: 9;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 2%;
+}
+
+.hero_1_box_1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 96%;
+    margin: 0;
+    margin-top: 5.5%;
+}
+
+.hero_1_text_1
+{
+    z-index: 5;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+    transform: translatey(-50px);
+    opacity: 0;
+    filter: blur(5px);
+    animation: aparecerTexto_Vertical 0.75s linear forwards;
+}
+
+.hero_1_text_2
+{
+    z-index: 5;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+    width: 98%;
+    transform: translatey(70px);
+    opacity: 0;
+    filter: blur(5px);
+    animation: aparecerTexto_Vertical 1s linear forwards;
+}
+
+@keyframes aparecerTexto_Vertical /* ! Animação do texto ! */
+{
+    to
+    {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
+    }
+}
+
+.span_azul
+{
+    color: #009ff0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.span_azul:hover
+{
+    -webkit-filter: drop-shadow(1px 1px 1px #009ff0) drop-shadow(-1px -1px 1px #009ff0);
+    filter: drop-shadow(1px 1px 1px #009ff0) drop-shadow(-1px -1px 1px #009ff0);
+    font-weight: bolder;
+}
+
+/* * -------------------------------------------------- HERO_2 -------------------------------------------------- * */
+/* * Seção: SOBRE * */
+/* ~ Wanderson ~ */
+/* ^ 04/05/2024 ^ */
+/* ^ Modificado: 09/05/2024 ^ */
+
+.hero_2
+{
+    display: flex;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    margin-top: 8%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.SOBRE
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    margin-top: 0.5%;
+    padding: 4% 9%;
+}
+
+.hero_2_titulo
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #009ff0;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.hero_2_text_1
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 10%;
+    margin-top: 3.5%;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.hero_2_BIG_BOX
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    padding: 3%;
+}
+
+.hero_2_box_1
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    margin: 5.5%;
+    margin-bottom: 1%;
+
+}
+
+.hero_2_box_2
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    margin: 5.5%;
+    margin-bottom: 1%;
+}
+
+.hero_2_box_3
+{
+    width: 94%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    margin: 3%;
+    margin-top: 1.2%;
+    margin-bottom: 6%;
+}
+
+.hero_2_projeto
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5%;
+}
+
+.span_laranja
+{
+    color: #fe5001;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.span_laranja:hover
+{
+    -webkit-filter: drop-shadow(1px 1px 1px white) drop-shadow(-1px -1px 1px white);
+    filter: drop-shadow(1px 1px 1px #fe5001) drop-shadow(-1px -1px 1px #fe5001);
+    font-weight: bolder;
+}
+
+/* * -------------------------------------------------- HERO_3 -------------------------------------------------- * */
+/* * Seção: ROADMAP * */
+/* ~ Wanderson ~ */
+/* ^ 04/05/2024 ^ */
+/* ^ Modificado: 09/05/2024 ^ */
+
+.hero_3
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    margin-top: -2%;
+    margin-bottom: 0.5%;
+}
+
+.Roadmap
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    margin-top: 2%;
+}
+
+.hero_3_titulo
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #009ff0;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.roadmap_vertical_line
+{
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    height: 1072px;
+    background-color: #009ff0;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    z-index: 12;
+}
+
+.roadmap_BIG_BOX 
+{
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    background-color: transparent;
+
+}
+
+.roadmap_horizontal_line_L,
+.roadmap_horizontal_line_R 
+{
+    width: 15%;
+    height: 8px;
+    background-color: #009ff0;
+    -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    border-radius: 12px;
+    position: absolute; /* Posicionamento absoluto */
+    z-index: 2;
+    border: none;
+}
+
+.roadmap_horizontal_line_L 
+{
+    left: 99%; /* Alinha a linha esquerda ao lado direito da box esquerda */
+    top: 45%;
+}
+
+.roadmap_horizontal_line_R 
+{
+    right: 99%; /* Alinha a linha direita ao lado esquerdo da box direita */
+    top: 45%;
+}
+
+.roadmap_h4
+{
+    margin: 3%;
+}
+
+.roadmap_box_LEFT
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+    margin-right: 1%;
+}
+
+.roadmap_box_RIGHT
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: -1%;
+    margin-left: 1%;
+    z-index: 10;
+}
+
+.roadmap_box_L
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: justify;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.roadmap_box_R
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: justify;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+/* * -------------------------------------------------- HERO_4 -------------------------------------------------- * */
+/* * Seção: WPDS * */
+/* ~ Wanderson ~ */
+/* ^ 04/05/2024 ^ */
+
+.hero_4
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 86%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    margin-top: 0.5%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+    padding: 2%;
+}
+
+.hero_4_BIG_BOX
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 95%;
+    padding: 2%;
+    margin-top: -2%;
+    margin-left: 1.5%;
+}
+
+.h4_Logo
+{
+    width: 85%;
+}
+
+.hero_4_Logo_1
+{
+    margin-top: -2%;
+    width: 86%;
+}
+
+.hero_4_anagrama
+{
+    width: 90%;
+    opacity: 0.7;
+}
+
+/* * -------------------------------------------------- HERO_5 -------------------------------------------------- * */
+/* * Seção: EQUIPE * */
+/* ~ Wanderson ~ */
+/* ^ 04/05/2024 ^ */
+/* ^ Modificado: 09/05/2024 ^ */
+
+.hero_5
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 8%;
+    margin-top: 0.2%;
+}
+
+.hero_5_titulo
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #009ff0;
+    font-weight: bold;
+    margin: 1%;
+    margin-top: 1.5%;
+}
+
+.hero_5_BIG_BOX
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.hero_5_box_L
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 65vh;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.user_profile_R
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    object-fit: cover;
+}
+
+.hero_5_box_R
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 65vh;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.user_profile_L
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    object-fit: cover;
+}
+
+
+.user_P_R_1,
+.user_P_R_3,
+.user_P_R_5
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.user_P_R_2,
+.user_P_R_4,
+.user_P_R_6
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.U_P
+{
+    width: 100%;
+    -webkit-filter: drop-shadow(2px 2px 6px #009ff0) drop-shadow(-2px -2px 6px #009ff0);
+    filter: drop-shadow(2px 2px 6px #009ff0) drop-shadow(-2px -2px 6px #009ff0);
+}
+
+.User_roles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: flex-start;
+    align-content: justify;
+    text-align: justify;
+    width: 90%;
+    margin-top: 2%;
+    padding: 1%;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .user_P_R_1,
+    .user_P_R_2,
+    .user_P_R_3,
+    .user_P_R_4,
+    .user_P_R_5,
+    .user_P_R_6
+    {
+        flex-direction: column-reverse;
+    }
+}
+
+/* * -------------------------------------------------- HERO_6 -------------------------------------------------- * */
+/* * Seção: PORTFÓLIO * */
+/* ~ Wanderson ~ */
+/* ^ 10/05/2024 ^ */
+
+.hero_6
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    margin-top: -5%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.portfolio_BIG_BOX
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 6%;
+    margin-top:-2%;
+    margin-bottom: 1%;
+    padding: 4%;
+    object-fit: cover;
+}
+
+.portfolio_1
+{
+    width: 43%;
+    margin-top: 3%;
+}
+
+.portfolio_2
+{
+    width: 40%;
+}
+
+.portfolio_3
+{
+    width: 38%;
+}
+
+.port_img
+{
+    margin-bottom: 1%;
+}
+
+.port_img:hover
+{
+    -webkit-filter: drop-shadow(3px 3px 6px #fe5001) drop-shadow(-3px -3px 6px #fe5001);
+    filter: drop-shadow(3px 3px 6px #fe5001) drop-shadow(-3px -3px 6px #fe5001);
+}
+
+/* * -------------------------------------------------- HERO_7 -------------------------------------------------- * */
+/* * Seção: CONTATO * */
+/* ~ Wanderson ~ */
+/* ^ 10/05/2024 ^ */
+
+.hero_7
+{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    margin-bottom: 1.5%;
+    background: rgba(0, 0, 0, 0.35); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.contato
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.hero_7_documento
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #009ff0;
+    font-weight: bolder;
+    margin: 0.5%;
+    margin-top: -2%;
+    font-size: 30px;
+}
+
+.hero_7_titulo
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #009ff0;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.contato_BIG_BOX
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+}
+
+.contato_box_1
+{
+    width: 50%;
+}
+
+.contato_box_2
+{
+    width: 50%;
+}
+
+.contato_box_3
+{
+    width: 100%;
+    margin: 1%;
+}
+
+.input
+{
+    width: 98%;
+    font-family: Lekton, monospace;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.label_mensagem,
+.input_mensagem
+{
+    width: 99%;
+    font-size: 20px;
+}
+
+.label_mensagem > h4
+{
+    margin: 1%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #009ff0;
+}
+
+.contato_box_3 > .label_mensagem > h4
+{
+    text-align: center;
+}
+
+.contato_button
+{
+    margin-bottom: 2%;
+}
+
+/* * -------------------------------------------------- FOOTER -------------------------------------------------- * */
+/* * Seção: FOOTER * */
+/* ~ Wanderson ~ */
+/* ^ 10/05/2024 ^ */
+
+.footer_line
+{
+    display: flex;
+    width: 90%;
+    margin: 4%;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #009ff0;
+    height: 5px;
+    border-radius: 12px;
+    -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
+    border: none;
+}
+
+.footer_text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+}
+
+.moon_background
+{
+    display: flex;
+}
+
+.moon
+{
+    z-index: -2;
+    width: 100%;
+    margin-top: -45%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 30px white) drop-shadow(-5px -5px 30px white);
+}
+
+/* *  -------------------------------------------------- DOCUMENTAÇÃO -------------------------------------------------- * */
+/* * Seção: DOCUMENTAÇÃO * */
+/* ~ Wanderson ~ */
+/* ^ 10/05/2024 ^ */
+
+.BIG_BOX_Docs
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.docs_titulo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    color: #009ff0;
+    font-weight: bold;
+}
+
+.BOX_Lateral_E,
+.BOX_Lateral_C,
+.BOX_Lateral_D
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0.3%;
+    margin: 2%;
+    margin-top: -0.5%;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.BOX_Lateral_E ul,
+.BOX_Lateral_C ul,
+.BOX_Lateral_D ul
+{
+    list-style: none;
+}
+
+.docs_sub_titulo
+{
+    color: #009ff0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.BOX_Lateral_E a
+{
+    text-decoration: none;
+}
+
+.BIG_BOX_Docs a:hover
+{
+    -webkit-filter: drop-shadow(2px 2px 2px #009ff0) drop-shadow(-2px -2px 2px #009ff0);
+    filter: drop-shadow(2px 2px 2px #009ff0) drop-shadow(-2px -2px 2px #009ff0);
+    font-weight: bolder;
+}
+
+/* * DOCUMENTAÇÃO -------------------------------------------------- PROJETO_INTEGRADO_1 -------------------------------------------------- * */
+/* * Seção: Projeto Integrado - 1 * */
+/* ~ Wanderson ~ */
+/* ^ 11/05/2024 ^ */
+
+.box_padrao_vazio
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+    justify-content: center;
+    align-items: justify;
+    text-align: justify;
+}
+
+.box_padrao_vazio p,
+.box_padrao_vazio ul
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* * DOCUMENTAÇÃO -------------------------------------------------- PROJETO_INTEGRADO_2 -------------------------------------------------- * */
+/* * Seção: Projeto Integrado - 2 * */
+/* ~ Wanderson ~ */
+/* ^ 11/05/2024 ^ */
+
+.box_padrao_background
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+    justify-content: center;
+    align-items: justify;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.15); /* Branco */
+    box-shadow: 1px 1px 20px 0 #009ff0;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.box_padrao_background p,
+.box_padrao_background ul
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* * DOCUMENTAÇÃO -------------------------------------------------- PROJETO_INTEGRADO_6 / 7 -------------------------------------------------- * */
+/* * Seção: Projeto Integrado - 2 * */
+/* ~ Wanderson ~ */
+/* ^ 11/05/2024 ^ */
+
+.projeto_integrado_6 p,
+.projeto_integrado_7 p
+{
+    margin-bottom: 0.1%;
+}
+
+/* * DOCUMENTAÇÃO -------------------------------------------------- BACKGROUND -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 11/05/2024 ^ */
+
+.stars_background_2
+{
+    position: absolute;
+    width: 100vw;
+    height: 1316%; /* ajustar conforme o tamanho da página*/
+    background: radial-gradient(
+    ellipse at bottom,
+    rgb(54, 106, 138),
+    rgb(9, 9, 9)
+    );
+    z-index: -2;
+}
+
+.layer_2
+{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 1316%;   /* ajustar conforme o tamanho da página*/
+    background: url("./RECURSOS/Imagens/Background/stars_big.png");
+}
+
+@keyframes move-twink-back 
+{
+    from 
+    {
+        background-position: 0 0;
+    }
+    to 
+    {
+        background-position: 0 -5000px;
+    }
+}

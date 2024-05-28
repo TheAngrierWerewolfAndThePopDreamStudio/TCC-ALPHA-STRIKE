@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Título da janela -->
+		<title>ALPHA STRIKE</title>  
+
+        <link rel="shortcut icon" href="./Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_ICON.png" type="image/x-icon">
+
+		<!-- Link - Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<!-- Link - CSS -->
+		<link rel="stylesheet" href="./styles.css">
+
+	</head>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- * Este bloco de comentários foi adicionado para padronizar o estilo de comentários no código, ajude a tornar o código mais legível. -->
+
+<!-- COMENTÁRIO NORMAL -->
+<!-- * PADRONIZAÇÂO * -->
+<!-- ^ ATENÇÃO / DATAS ^ -->                                    <!-- ^ Baixem a Extensão: Colorful Comments e/ou Better Comments ^ -->
+<!-- TODO # Coisas a fazer/concluir -->
+<!-- ! IMPORTANTE ! -->
+<!-- ? COMENTÁRIO / IDÉIA / DIFICULDADE / DUVIDA ? -->
+<!-- ~ NOME / DESTAQUE ~ -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+	<body>
+
+		<div class="container-fluid">                   <!-- ^ Container-fluid para ser Full Screen ^-->
+
+		<!-- <div class="cursor-cross-hair"></div> -->  <!-- ? Não consegui fazer funcionar (W) ? -->
+		<!-- <div class="cursor-hit-marker"></div> -->  <!-- ? Não consegui fazer funcionar (W) ? -->
+
+<!--*  -------------------------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------- *-->
+<!-- ~ Wanderson ~ -->
+<!-- ^ 18/04/2023 ^ -->
+<!-- ^ Modificado: 11/04/2024  ^-->
+<!-- ^ Modificado: 11/05/2024  ^-->
+<!-- TODO 1. Atualizar Links dos Botões -->
+<!-- ! CUIDADO!! Os links da Navbar são diferentes dependendo da página!! -->>
+
+            <div class="navbar fixed-navbar">
+
+                <img src="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png" alt="Logo" height="95px" class="logoAS">
+
+                <button type="button" class="btn btn-custom col sm-1" id="home"><a href="./index.html">Home</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="info"><a href="../PAGES/info.html">Info</a></button>   <!-- ^ 18/04/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="blog"><a href="#">Blog</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="contato"><a href="../PAGES/contato.html">Contato</a></button> <!-- ^ 01/05/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="eventos"><a class="btn_importante" href="../PAGES/eventos.html">Eventos</a></button> <!-- ^ 27/04/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="loja"><a class="btn_importante" href="#">Loja</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="carrinho"><a class="btn_importante" href="#">Carrinho</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="entrar"><a href="#">Entrar</a></button>
+
+            </div>
+
+<!--*  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ *-->
+
+<!--*  2 ---------------------------------------------------------------------------------Carrossel_1------------------------------------------------------------------------------------ *-->
+<!-- ~ Wanderson ~ -->
+<!-- ^ 05/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Carrossel_1 fluid">
+
+                <div class="Slides_1">
+
+                    <!-- Ordem decrescente para mostrar o slide 1 primeiro -->
+                    <div class="C1_Itens Item_3">
+
+                        <img src="./Recursos/Imagens/Home_Carrossel_1_Images/Hero_3.png" alt="Slide 3" height="1000px" width="100%" class="hero_slides_1 zoom-in">
+
+                        <div class="Conteudo_Hero_1">
+
+                            <h1 class="Titulo_C1 CT3">MAIS QUE UM JOGO</h1>
+                            <p class="C1_P Hero_p_3">
+                                Procurando uma opção diferenciada e cheia de energia para o seu próximo evento? 
+                                Oferecemos uma alternativa criativa e estimulante, garantindo momentos de diversão e descontração para todos.
+                            </p>
+                            <button class="btn_C1 btn_C1_3_1"><a href="../PAGES/info.html#ESTRUTURA">>Estrutura</a></button>
+                            <button class="btn_C1 btn_C1_3_2"><a href="../PAGES/eventos.html">>Eventos</a></button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="C1_Itens Item_2">
+
+                        <img src="./Recursos/Imagens/Home_Carrossel_1_Images/Hero_2.jpg" alt="Slide 2" height="1000px" width="100%" class="hero_slides_1 zoom-in">
+
+                        <div class="Conteudo_Hero_1">
+
+                            <h1 class="Titulo_C1 CT2">O MAIOR PORTAL DE AIRSOFT</h1>
+                            <p class="C1_P Hero_p_2">
+                                Descubra a emoção do airsoft em nossa arena indoor, e explore a loja mais completa do sul do país. 
+                                Aventuras a preços acessíveis - diversão garantida para toda a família e amigos! 
+                                Venha fazer parte dessa experiência emocionante.
+                            </p>
+                            <button class="btn_C1 btn_C1_2_1"><a href="../PAGES/info.html#ESTRUTURA">>Estrutura</a></button>
+                            <button class="btn_C1 btn_C1_2_2"> >Loja</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="C1_Itens Item_1">
+
+                        <img src="./Recursos/Imagens/Home_Carrossel_1_Images/Hero_1.jpg" alt="Slide 1" height="1000px" width="100%" class="hero_slides_1 zoom-in">
+                        
+                        <div class="Conteudo_Hero_1">
+
+                            <h1 class="Titulo_C1 CT1">ALPHA STRIKE AIRSOFT</h1>
+                            <p class="C1_P Hero_p_1">
+                                Em busca de uma experiência de airsoft incomparável? 
+                                Junte-se à elite dos jogadores e experimente uma nova dimensão de adrenalina e emoção. 
+                                Venha nos visitar e descubra por que somos a escolha número um!
+                            </p>
+                            <button class="btn_C1 btn_C1_1_1"><a href="../PAGES/info.html#ESTRUTURA">>Estrutura</a></button>
+                            <button class="btn_C1 btn_C1_1_2"> >Loja</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="Setas_C1">
+
+                    <button class="btn_C1_Setas Seta_Voltar"><</button>
+                    <button class="btn_C1_Setas Seta_Avançar">></button>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  3 ---------------------------------------------------------------------------------Features_1------------------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ^ Modificado e Padronizado - 07/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Features_1 fluid">
+                
+                <div class="card_F_1 C_1_1">
+                    <a class="link_card_F_1" href="../PAGES/eventos.html">[ EVENTOS ]</a>
+                    <p class="Paragrafo_F_1_C_Oculto">Aberto todos os dias. Arenas com mais de 3000m².</p>
+                </div>
+
+                <div class="card_F_1 C_1_2">
+                    <a class="link_card_F_1" href="#">[ LOJA ]</a>
+                    <p class="Paragrafo_F_1_C_Oculto">Centenas de produtos. As melhores marcas. Especialistas em Airsoft</p>
+                </div>
+
+                <div class="card_F_1 C_1_3">
+                    <a class="link_card_F_1" href="../PAGES/info.html#ESTRUTURA">[ ESTRUTURA ]</a>
+                    <p class="Paragrafo_F_1_C_Oculto">Arenas nos bairros Boqueirão e Santa Felicidade.</p>
+                </div>
+
+                <h2 class="Sub_titulo_F_1">AS MELHORES ARENAS DE AIRSOFT DO BRASIL!</h2>
+
+                <p class="Paragrafo_F_1">
+                    Nossas arenas foram construídas, em primeiro lugar, para oferecer as instalações de simulação de combate mais realista dentro da indústria de airsoft. 
+                    Vamos imaginar o jogo onde você está combinando o talento de um cineasta e a visão de um jogador sofisticado. 
+                    Venha a zona de guerra e vivencie a melhor ação de combate que você já experimentou.
+                </p>
+
+
+                <button class="btn_F_1"><a href="../PAGES/info.html#SOBRE">SOBRE</a></button>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  4 ---------------------------------------------------------------Carrossel_2 (só imagens/Card e texto são fixos)------------------------------------------------------------------ *-->
+<!-- ~ Wanderson ~ -->
+<!-- ^ 06/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="row Carrossel_2 fluid">
+
+                <div class="Slides_2 C2_esquerda">
+
+                    <div class="C2_Itens Item_1">
+
+                        <img src="./Recursos/Imagens/Home_Carrossel_2_Images/C2_1.jpg" alt="Slide 1" class="C2_slides_1">
+                        <img src="./Recursos/Imagens/Home_Carrossel_2_Images/C2_2.jpg" alt="Slide 2" class="C2_slides_1">
+                        <img src="./Recursos/Imagens/Home_Carrossel_2_Images/C2_3.jpg" alt="Slide 3" class="C2_slides_1">
+
+
+                        <div class="Setas_C2">
+
+                            <button class="btn_C2_Setas Seta_Voltar_C2"><</button>
+                            <button class="btn_C2_Setas Seta_Avançar_C2">></button>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="Box_C2 C2_direita">
+
+                        <div class="Conteudo_C2">
+
+                            <h2 class="Titulo_C2">AIRSOFT É UM ESPORTE ATIVO E NÃO É PARA OS FRACOS DE CORAÇÃO!</h2>
+                            <p class="C2_P">
+                                Armas de airsoft frequentemente se assemelham a armas de fogo reais, mas as réplicas disparam pequenas esferas de plástico. 
+                                Em sua essência, o airsoft é semelhante aos videogames de tiro em primeira pessoa, 
+                                permitindo vivenciar batalhas realistas e cenários táticos de jogo.
+                            </p>
+                            <h4 class="C2_h4"><span class="C2_Check">> </span>VEJA NOSSOS <a href="../PAGES/contato.html" id="Horario_operacao">HORÁRIOS DE OPERAÇÃO</a></h4>
+                            <h4 class="C2_h4"><span class="C2_Check">> </span>DESCUBRA NOSSAS <a href="../PAGES/info.html#REGRAS" id="regras_regulamentos">REGRAS E REGULAMENTOS</a></h4>
+
+
+                        </div>
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  5 -------------------------------------------------------------------------Pricing_1 (Flip Cards)--------------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ^ Modificado e Padronizado - 07/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Pricing_1 fluid">
+
+                <h2 class="Titulo_P_1">VALORES</h2>
+            
+                <div class="botões_P_1">
+
+                    <button class="btn_P_1 btn_P_1_Opçao_1">OPEN</button>
+                    <button class="btn_P_1 btn_P_1_Opçao_2">EVENTO</button>
+                    <button class="btn_P_1 btn_P_1_Opçao_3">TREINAMENTO</button>
+
+                </div>
+
+                <div class="Cards_P1_Todos">
+
+                    <div class="cards_P_Open">
+                    <!-- OPEN -->
+                        <div class="cards_P_1_Open_1">
+                            <h3 class="P_1_h3">LIVRE</h3>
+                            <h2 class="P_1_h2">R$ 50,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Valor individual</p>
+                            <p class="P_1_p"><span>> </span>Traga seu equipamento</p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Open_2">
+                            <h3 class="P_1_h3">3 HORAS</h3>
+                            <h2 class="P_1_h2">R$ 100,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Inclui aluguel de simulacros de pistolas, 
+                            munição (1000 BBs) e equipamentos de proteção
+                            </p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Open_3">
+                            <h3 class="P_1_h3">8 HORAS</h3>
+                            <h2 class="P_1_h2">R$ 150,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Inclui aluguel de simulacros de rifles, 
+                            munição (1000 BBs) e equipamentos de proteção
+                            </p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+                
+                    </div>
+
+                    <div class="cards_P_Eventos">
+                    <!-- EVENTOS -->
+
+                        <div class="cards_P_1_Eventos_1">
+                            <h3 class="P_1_h3">FINAIS DE SEMANA</h3>
+                            <h2 class="P_1_h2">R$ 70,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Valor individual</p>
+                            <p class="P_1_p"><span>> </span>Traga seu equipamento</p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Eventos_2">
+                            <h3 class="P_1_h3">10 HORAS</h3>
+                            <h2 class="P_1_h2">R$ 120,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Inclui aluguel de simulacros de pistolas, 
+                            munição (1000 BBs) e equipamentos de proteção
+                            </p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Eventos_3">
+                            <h3 class="P_1_h3">FERIADOS</h3>
+                            <h2 class="P_1_h2">R$ 200,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Inclui aluguel de simulacros de rifles, 
+                            munição (1000 BBs) e equipamentos de proteção
+                            </p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                    </div>
+
+                    <div class="cards_P_Treinamentos">
+                    <!-- TREINAMENTOS -->
+
+                        <div class="cards_P_1_Treinamentos_1">
+                            <h3 class="P_1_h3">VIGILANTES</h3>
+                            <h2 class="P_1_h2">R$ 30,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Valor individual</p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Treinamentos_2">
+                            <h3 class="P_1_h3">FORÇAS DE SEGURANÇA</h3>
+                            <h2 class="P_1_h2">R$ 60,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Valor individual</p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+
+                        <div class="cards_P_1_Treinamentos_3">
+                            <h3 class="P_1_h3">FORÇAS ARMADAS</h3>
+                            <h2 class="P_1_h2">R$ 90,00</h2>
+                            <hr class="P_1_hr">
+                            <p class="P_1_p"><span>> </span>Valor individual</p>
+                            <button class="btn_P_1_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+                        </div>
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  6 -------------------------------------------------------------------------------- Hero_1 ---------------------------------------------------------------------------------------- *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 09/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Hero_1">
+
+                <div class="Hero_1_Background">
+
+                    <img src="./Recursos/Imagens/Home_Hero_1/Hero_1_1.jpg" alt="Hero_1" class="Hero_1_Img">
+
+                </div>
+
+                <div class="Hero_1_Box_1">
+
+                    <h2 class="H_1_h2 H_1_Base"><span>[ </span>BASE<span> ]</span></h2>
+                    <p class="H_1_p H_1_p_Base" >
+                        Nossa Base de airsoft proporciona confrontos táticos em ambientes fechados, 
+                        ideal para jogadores que buscam desafios intensos e estratégias precisas.
+                    </p>
+                    <button class="btn_H_1 btn_H_1_Indoor"><a href="../PAGES/info.html#INDOOR">INDOOR</a></button>
+
+                </div>
+
+                <div class="Hero_1_Box_2">
+
+                    <h2 class="H_1_h2 H_1_Campo"><span>[ </span>CAMPO<span> ]</span></h2>
+                    <p class="H_1_p H_1_p_Campo" >
+                        Nosso Campo oferece cenários desafiadores ao ar livre, 
+                        promovendo jogos táticos em terreno amplo, 
+                        proporcionando uma experiência imersiva e emocionante.
+                    </p>
+                    <button class="btn_H_1 btn_H_1_Outdoor"><a href="../PAGES/info.html#OUTDOOR">OUTDOOR</a></button>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+
+<!--TODO 4 Inserir 7 (LOJA)-------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  8 -----------------------------------------------------------------Carrossel_3 (estilo Cards/tudo muda junto)--------------------------------------------------------------------- *-->
+<!-- ~ Wanderson ~ -->
+<!-- ^ 06/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class=" row Carrossel_3 fluid">
+
+                <div class="Slides_3 C3_esquerda">
+
+                    <div class="C3_Itens">
+
+                        <img src="./Recursos/Imagens/Home_Carrossel_3_Images/C3_3.jpg" alt="03" class="C3_slides C3_03">
+                        <img src="./Recursos/Imagens/Home_Carrossel_3_Images/C3_2.jpg" alt="02" class="C3_slides C3_02">
+                        <img src="./Recursos/Imagens/Home_Carrossel_3_Images/C3_1.jpg" alt="01" class="C3_slides C3_01">
+                        
+
+                    </div>
+
+                </div>
+
+                <div class="Box_C3 C3_direita">
+
+                    <div class="Conteudo_C3_1">
+
+                        <h2 class="Titulo_C3">ARTIGO DO BLOG/DESTAQUE 1</h2>
+                        <p class="C3_P">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <h4 class="C3_h4"><span class="C3_Check">> <a href="#" id="veja_mais">VEJA MAIS</a></h4>
+
+                    </div>
+
+                    <div class="Conteudo_C3_2">
+
+                        <h2 class="Titulo_C3">ARTIGO DO BLOG/DESTAQUE 2</h2>
+                        <p class="C3_P">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <h4 class="C3_h4"><span class="C3_Check">> <a href="#" id="veja_mais">VEJA MAIS</a></h4>
+
+                    </div>
+
+                    <div class="Conteudo_C3_3">
+
+                        <h2 class="Titulo_C3">ARTIGO DO BLOG/DESTAQUE 3</h2>
+                        <p class="C3_P">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <h4 class="C3_h4"><span class="C3_Check">> <a href="#" id="veja_mais">VEJA MAIS</a></h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Btns_C3">
+
+                <button class="btn_quadrado btn_q_1"></button>
+                <button class="btn_quadrado btn_q_2"></button>
+                <button class="btn_quadrado btn_q_3"></button>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  9 -------------------------------------------------------------------------------- Hero_2 ---------------------------------------------------------------------------------------- *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 09/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Hero_2">
+
+                <div class="Hero_2_Background">
+
+                    <img src="./Recursos/Imagens/Home_Hero_2/Hero_2_1.jpg" alt="Hero_2" class="Hero_2_Img">
+
+                </div>
+
+                <div class="Hero_2_Box">
+
+                    <h2 class="H_2_h2">Entretenimento Tático</h2>
+
+                    <p class="H_2_p">
+                        Cada partida é uma <span>oportunidade única</span> de mergulhar em um <span>ambiente simulado de combate</span>,
+                        onde estratégia e habilidade se combinam para criar uma experiência intensamente emocionante.
+                    </p> 
+
+                    <p class="H_2_p">
+                        Desde a tensão de se mover furtivamente pelo campo de batalha até a gratificação de acertar seu alvo, 
+                        o airsoft oferece uma <span>experiência imersiva</span> que desafia tanto o corpo quanto a mente.
+                    </p>
+
+                    <p class="H_2_p">
+                        Teste suas habilidades em um cenário de combate, seja desafiado e crie momentos inesquecíveis.
+                        <span>Agende agora</span> e experimente a emoção que só o airsoft pode oferecer.
+                    </p>
+
+                    <button class="btn_H_2 btn_H_2_Agendar"><a href="../PAGES/eventos.html">AGENDAR</a></button>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  10 ------------------------------------------------------------------------------- Features_2 ------------------------------------------------------------------------------------ *-->
+<!-- ~ Felipe ~ -->
+<!-- ^ Modificado e Padronizado - 08/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Features_2 fluid">
+
+                <h2 class="Titulo_F_2">NOVIDADES</h2>
+
+                <div class="Cards_F2_Todos">
+
+                    <div class="Cards_F2_1">
+
+                        <button class="btn_F_2_Tag">AIRSOFT</button>
+                        <a href="#" id="id_artigo_1_blog">
+                        <img src="./Recursos/Imagens/Home_Features_2_Images/Features_2_1.jpg" alt="img do blog" class="F2_Img_blog"></img>
+                        </a>
+                        <h4 class="F2_h4"><a href="#" id="id_artigo_1_blog">Titulo do Artigo 1</a></h4>
+
+                        <div class="F2_h5_Box">
+
+                            <h5 class="F2_h5 Blog_Data"><a href="#" id="id_data_artigo_1_blog">08/04/20XX</a></h5>
+                            <h5 class="F2_h5 Blog_Comentarios"><a href="#" id="id_comentarios_artigo_1_blog">0 Comentários</a></h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Cards_F2_2">
+
+                        <button class="btn_F_2_Tag">AIRSOFT</button>
+                        <a href="#" id="id_artigo_2_blog">
+                        <img src="./Recursos/Imagens/Home_Features_2_Images/Features_2_2.jpg" alt="img do blog" class="F2_Img_blog"></img>
+                        </a>
+                        <h4 class="F2_h4"><a href="#" id="id_artigo_2_blog">Titulo do Artigo 2</a></h4>
+                        
+                        <div class="F2_h5_Box">
+
+                            <h5 class="F2_h5 Blog_Data"><a href="#" id="id_data_artigo_1_blog">08/04/20XX</a></h5>
+                            <h5 class="F2_h5 Blog_Comentarios"><a href="#" id="id_comentarios_artigo_1_blog">0 Comentários</a></h5>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="Cards_F2_3">
+
+                        <button class="btn_F_2_Tag">AIRSOFT</button>
+                        <a href="#" id="id_artigo_3_blog">
+                        <img src="./Recursos/Imagens/Home_Features_2_Images/Features_2_3.jpg" alt="img do blog" class="F2_Img_blog"></img>
+                        </a>
+                        <h4 class="F2_h4"><a href="#" id="id_artigo_3_blog">Titulo do Artigo 3</a></h4>
+                        
+                        <div class="F2_h5_Box">
+
+                            <h5 class="F2_h5 Blog_Data"><a href="#" id="id_data_artigo_1_blog">08/04/20XX</a></h5>
+                            <h5 class="F2_h5 Blog_Comentarios"><a href="#" id="id_comentarios_artigo_1_blog">0 Comentários</a></h5>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  11 -------------------------------------------------------------------------------- Hero_3 ---------------------------------------------------------------------------------------- *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 09/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Hero_3">
+
+                <div class="Hero_3_Background">
+
+                    <img src="./Recursos/Imagens/Home_Hero_3/Hero_3_1.jpg" alt="Hero_3" class="Hero_3_Img">
+
+                </div>
+
+                <div class="Hero_3_Box">
+
+                    <h2 class="H_3_h2">Armamentos de Elite</h2>
+
+                    <p class="H_3_p">
+                        <span>Descubra a nossa vasta seleção</span> de armas, equipamentos táticos e acessórios,
+                        projetados para atender às necessidades dos jogadores de todos os níveis de habilidade e preferências de jogo.
+                    </p> 
+
+                    <p class="H_3_p">
+                        <span>Explore nosso catálogo  de armamentos</span>, desde rifles de assalto e pistolas e equipamentos de proteção, 
+                        todos cuidadosamente selecionados para garantir desempenho, durabilidade e autenticidade, proporcionando uma experiência imersiva.
+                    </p>
+
+                    <p class="H_3_p">
+                        Nossa loja oferece <span>conveniência incomparável</span> para os entusiastas do airsoft, 
+                        permitindo que você se concentre no que realmente importa: a emoção do jogo.
+                    </p>
+
+                    <button class="btn_H_3 btn_H_3_Loja">LOJA</button>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  12 ------------------------------------------------------------------------------- Card_Contato --------------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ^ Modificado e Padronizado - 08/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+<!-- TODO 2. Criar email e atualizar com o link -->
+
+            <div class="C_C_Line"></div> <!-- ^ Linha de divisão fora da Card_Contato para ficar embaixo e poder controlar ^ -->
+
+            <div class="Card_Contato fluid">
+
+                <div class="C_C_Box">
+
+                    <div class="C_C_Box_1"> <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                        <h4 class="C_C_h4">CONTATO</h4>
+                        <p class="C_C_p_email">atendimento@alphastrike.com.br</p>
+                        <p class="C_C_p_telefone">(41)XXXX-XXXX</p>
+
+                    </div>
+
+                    <div class="C_C_Box_2"> <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                        <img src="./Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png" alt="logo" class="C_C_Logo">
+
+                    </div>
+
+                    <div class="C_C_Box_3"> <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                        <h4 class="C_C_h4" id="id_h4_enderecos">ENDEREÇOS</h4>
+                        <h5 class="C_C_p_arena_1">BASE</h5>
+                        <p class="C_C_p_endereço">Rua Padre Dehon, 2XXX - Boqueirão, Curitiba - PR</p>
+                        <h5 class="C_C_p_arena_1">CAMPO</h5>
+                        <p class="C_C_p_endereço">Rua Antônio Escorsin, 3XX - Santa Felicidade, Curitiba - PR</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="C_C_Line"></div> <!-- ^ Linha de divisão fora da Card_Contato para ficar embaixo e poder controlar ^ -->
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  13 --------------------------------------------------------------------------------- Footer_1 ------------------------------------------------------------------------------------ *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 08/04/2024 ^ -->
+
+            <div class="Footer_1">
+
+                <p class="Footer_1_p">Alpha Strike © 2024. Todos os direitos reservados.</p>
+
+            </div>
+
+            <div class="Footer_1_Line"></div> <!-- ^ Linha de divisão fora da Card_Contato para ficar embaixo e poder controlar ^ -->
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  13.1 ------------------------------------------------------------------------------- Footer_2 ------------------------------------------------------------------------------------ *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 08/04/2024 ^ -->
+<!-- TODO 1. Atualizar Links dos Botões -->
+
+            <div class="Footer_2">
+
+                <div class="Footer_2_Box_1">
+
+                    <h5 class="Footer_2_h5 TCC"><span>Trabalho de Conclusão de Curso</span> apresentado à Escola Técnica <span>SENAI</span>, 
+                        unidade Celso Charuri de Curitiba, como requisito para obtenção do Título de <span>Técnico em Desenvolvimento de Sistemas</span>.
+                    </h5">
+
+                    <p class="Footer_2_p">Entrega parcial: 19/06/2024.</p>
+
+                </div>
+                <!-- <vr></vr> --> <!-- ^  ^ -->
+                <div class="Footer_2_Box_2">
+
+                    <h5 class="Footer_2_h5 TCC_desenvolvimento">Desenvolvido por:</h5">
+
+                    <a href="./" target="_blank" class="Footer_2_a">
+                        <img src="./Recursos/Imagens/Werewolf_Logo/werewolf_logo_v3.png" alt="logo" class="Footer_2_Werewolf_Logo">
+                    </a>
+
+                </div>
+
+            </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  ENTRAR --------------------------------------------------------------------- FORMULÁRIO LOGUIN/CADASTRO -------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ~ Wanderson ~ -->
+<!-- ^ Modificado: 11/05/2024 ^ -->
+
+            <!-- * Formulário de Login * -->
+            <dialog class="modal" id="loginDialog">
+                <img class="X close fechar_modal_login" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalLogin()">
+                <header class="F_login">Login</header>
+
+                <form action="#">
+                    <!-- * Email * -->
+                    <div class="field input-field">
+                        <input type="email" required placeholder="Email" class="input" name="email" id="email">
+                    </div>
+                    <!-- * Senha * -->
+                    <div class="field input-field">
+                        <input type="password" required placeholder="Senha" class="password" name="senha" id="senha">
+                        <i class="bx bx-hide eye-icon"></i> <!-- ^ BUG: ícone desapareceu! ^ -->
+                    </div>
+                    <!-- * Esqueceu a senha? * -->
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                    </div>
+                    <!-- * Botão: Entrar * -->
+                    <div class="field button-field">
+                        <button class="btn_F_1">Entrar</button>
+                    </div>
+                    <!-- * Formulário de cadastro * -->
+                    <div class="form-link">
+                        <span class="form_text">Não possui uma conta? <a href="#" class="link signup-link">Inscreva-se</a></span>
+                    </div>
+                    <!-- * Linha de divisão * -->
+                    <div class="line"></div>
+                    <!-- * Botão do Google * -->
+                    <div class="media-options">
+                        <a href="#" class="field google">
+                            <img id="logogoogle" src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png" alt="Logo google">
+                            <span class="btn_G_1">Entrar com Google</span>
+                        </a>
+                    </div>
+
+                </form>
+
+            </dialog>
+
+            <!-- * Formulário de Cadastro * -->
+            <dialog class="modal modal_2" id="signupDialog">
+                <img class="X close fechar_modal_signup" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalSignup()">
+                <header class="F_cadastro">Cadastro</header>
+
+                <div class="BIG_BOX_form_cad">
+                    
+<!-- ! CUIDADO Mudanças e atualizações no formulário de cadastro!! Ainda não é o final!!-->>
+                    <!--*  SECURITY_LAYER - NÍVEL_1 *-->
+                    <!-- ~ Wanderson ~ -->
+                    <!-- ^ Modificado: 23/05/2024 ^ -->
+
+                    <div class="box_left">
+
+                        <div class="modal_SLN_1_2" id="Recomendations">
+
+                            <p class="SLN_1_p_1">Recomendações</p>
+                            <ul class="SLN_1_ul">
+                                <li class="SLN_1_li"><span class="laranja_2">Senha longa:</span> <br>de preferência uma frase.</li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Complexa:</span> <br>que tenha sentido apenas para você. </li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Prática:</span> <br>fácil de lembrar.</li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Impessoal:</span> <br>não use datas ou dados pessoais. </li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Secreta:</span> <br>nunca compartilhe.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <form class="box_center" action="#">
+                        <!-- * Classe BOX principal (linha) * -->
+                        <div class="BIG_BOX_1">
+                            <!-- * BOX 1 = coluna * -->
+                            <div class="box_1">
+                                <!-- * Nome * -->
+                                <div class="field input-field">
+                                    <input type="nome" required placeholder="Nome" class="input" name="nome" id="nome">
+                                </div>
+                                <!-- * Sobrenome * -->
+                                <div class="field input-field">
+                                    <input type="sobrenome" required placeholder="Sobrenome" class="input" name="sobrenome" id="sobrenome">
+                                </div>
+                                <!-- * CPF * -->
+                                <div class="field input-field">
+                                    <input type="cpf" required placeholder="CPF" max="11" class="input" name="cpf" id="cpf">
+                                </div>
+
+                            </div>
+                            <!-- * BOX 2 = coluna * -->
+                            <div class="box_2">
+                                <!-- * Email * -->
+                                <div class="field input-field">
+                                    <input type="email" required placeholder="Email" class="input" name="email" id="email_1">
+                                </div>
+                                <!-- * Senha * -->
+                                <div class="field input-field">
+                                    <input type="password" required placeholder="Crie uma senha" class="password" name="senha" id="senha_1">
+                                </div>
+                                <!-- * Confirmação de senha * -->
+                                <div class="field input-field">
+                                    <input type="password" required placeholder="Confirme a senha" class="password" name="senha" id="senha_2">
+                                    <i class="bx bx-hide eye-icon"></i> <!-- ^ BUG: ícone desapareceu! ^ -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- * Botão: Inscreva-se * -->
+                        <div class="field button-field">
+                            <button class="btn_F_1">Inscreva-se</button>
+                        </div>
+                        <!-- * Formulário de login * -->
+                        <div class="form-link">
+                            <span class="form_text">Já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                        </div>
+                        <!-- * Linha de divisão * -->
+                        <div class="line"></div>
+                        <!-- * Botão do Google * -->
+                        <div class="media-options">
+                            <a href="#" class="field google">
+                                <img id="logogoogle" src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png" alt="Logo google">
+                                <span class="btn_G_1">Entrar com Google</span>
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <!--*  SECURITY_LAYER - NÍVEL_1 *-->
+                    <!-- ~ Wanderson ~ -->
+                    <!-- ^ Modificado: 23/05/2024 ^ -->
+
+                    <div class="box_right">
+
+                        <div class="modal_SLN_1_1" id="Password_Validation">
+
+                            <p class="SLN_1_p_1">A senha deve conter:</p><br>
+                            <ul class="SLN_1_ul SLN_1_ul_val">
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 20 caracteres.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 letra minúscula.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 letra maiúscula.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 número.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 caractere especial.</li>
+                            </ul>
+
+                            <p class="val_line val_line_1">Incrível</p>
+                            <p class="val_line val_line_2">Muito Forte</p>
+                            <p class="val_line val_line_3">Forte</p>
+                            <p class="val_line val_line_4">Fraca</p>
+                            <p class="val_line val_line_5">Muito Fraca</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </dialog>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+
+		</div>
+		
+		<!-- Link - Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Link - Javascript -->
+        <script src="./index.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,3437 @@
+/*------------------------------------------------------------*\  
+|    LARANJA - International Orange (Aerospace) = #fe5001      |
+|    LARANJA - Flame = #d2541f                                 |
+|    PRETO 1 - Chinese Black = #0e1116                         |
+|    PRETO 2 - Raisin Black  = #262626                         |
+|    PRETO 3 - Rich Black  = #040b14                           |
+|    MARROM  - Pastel Brown  = #857058                         |                                                            
+|    FONTE 1 = "Roboto Condensed", sans-serif;                 |
+|    FONTE 2 = "Monda", sans-serif;                            |
+|    FONTE 3 = Verdana, Geneva, Tahoma, sans-serif;            |
+|                                                              |
+\*------------------------------------------------------------*/
+
+/* * 0 -------------------------------------------------- Padrão -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+
+h1
+{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+h2
+{
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+h3
+{
+    font-size: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+h4
+{
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+h5
+{
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+p, ol, ul, li
+{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: "Monda", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+body
+{
+    background-color: #0e1116;
+}
+
+.container-fluid
+{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+}
+
+.btn:active,
+.btn::after
+{
+    border: none;
+}
+
+/*.cursor-cross-hair
+{
+    cursor: url('./Cursor_Cross_Hair_SVG.svg'), auto;
+    z-index: 1;
+}
+
+.cursor-hit_marker
+{
+    cursor: url('./Cursor_Hit_Marker_SVG.svg'), auto;
+    z-index: 1;
+} */
+
+/* * 1 -------------------------------------------------- Navbar -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 30/03/2024 ^ */
+
+.fixed-navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navbar
+{
+    background-color: transparent;
+    display: inline-flexbox;
+    padding: 5px;
+    margin: 10px;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.btn-custom /* Botões da Navbar*/
+{
+    background-color: transparent;
+    color: white;
+    border-radius: 0px;
+    height: 45px;
+    padding: 5px;
+    margin: 5px; /* margem entre botoes */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-shrink: 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.15rem; /* espaçamento entre as letras */
+    position: relative;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.btn-custom a   /* ^ 18/04/2024 ^ */
+{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-custom:hover 
+{
+    color: #fff;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 5px;
+    filter: drop-shadow(1px 1px 3px #fe5001);
+    /* cursor: url('./Cursor_Cross_Hair_SVG.svg') !important; */
+}
+
+.btn-custom:active  /* ^ 08/05/2024 ^ */
+{
+    border: none;
+}
+
+.btn-custom::after /* Animação do botão */
+{   
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background: white;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover::after /* Animação do botão */
+{ 
+    transform: scale(1,1);
+    background-color:#fe5001;
+    /*box-shadow: #fe5001 0 0 10px 3px;*/
+}
+
+.btn-custom .btn_importante /* ^ 18/04/2024 ^ */
+{
+    color: #fe5001; /* Cor dos botões mais importantes */
+    font-weight: bolder;
+}
+
+.logoAS
+{
+    filter: drop-shadow(1px 1px 8px #fe5001); 
+}
+
+/* * 2 -------------------------------------------------- Carrossel_1 -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 05/04/2024 ^ */
+
+.Carrossel_1-fluid /* Adicionado -fluid para responsividade (se adicionar no html da problema na exibição) */
+{
+    display: flex;
+    order: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -125px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+}
+
+@media screen and (min-width: 1900px) 
+{
+    .Carrossel_1 .Slides_1
+    {
+        height: 100vh;
+    }
+}
+
+.Carrossel_1 .Slides_1 .C1_Itens
+{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.C1_Itens img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zoom-in
+{
+    animation-name: zoomIN;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoomIN 
+{
+    from 
+    {
+        transform: scale(0.9);
+    }
+    to 
+    {
+        transform: scale(1); /* Fim da escala */
+    }
+}
+
+.Conteudo_Hero_1
+{
+    position: absolute;
+    top: 50%;
+    margin-left: 190px;
+    width: 750px;
+    max-width: 80%;
+    color: white;
+}
+
+@media (max-width: 576px) 
+{
+    .Conteudo_Hero_1
+    {
+        display: none; /* Oculta o conteúdo dos slides quando a tela ficar menor que 576px */
+    }
+}
+
+.Titulo_C1
+{
+    color: #fe5001;
+    font-weight: 650;
+}
+
+.C1_P
+{
+    margin-top: 30px;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.btn_C1,
+.btn_C1 a
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #fe5001;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-right: 90px;
+    margin-left: 40px; /* ^ tem que verificar ^ */
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.btn_C1:hover,
+.btn_C1 a:hover
+{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px #fe5001);
+}
+
+.Setas_C1
+{
+    position: absolute;
+    top: 78%;
+    right: 8%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+@media (max-width: 576px) 
+{
+    .Setas_C1 
+    {
+        display: none; /* Oculta as setas de navegação */
+    }
+}
+
+.btn_C1_Setas 
+{
+    display: flex;
+    flex-shrink: 0;
+    height: 20px;
+    width: 35px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style:normal ;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #0e1116;
+    color: white;
+    opacity: 0.7;
+    border: none;
+    border-radius: 0px;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: .5s;
+}
+
+.btn_C1_Setas:hover 
+{
+    background-color: white;
+    color: #0e1116;
+}
+
+
+.C1_Itens .Conteudo_Hero_1  
+{
+    transform: translateX(-200px); /* define posição inicial */
+    opacity: 0;                    /* define opacidade inicial */
+    filter: blur(20px);            /* define o filtro inicial */
+    animation: aparecerConteudo 1.2s linear forwards; /* Criação da animação com tempo e estilo */
+}
+
+@keyframes aparecerConteudo /* Chamada da animação */
+{
+    to  /* reverte a animação */
+    {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0);
+    }
+}
+
+/* * 3 -------------------------------------------------- Features_1 -------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ Modificado e Padronizado - 08/04/2024 ^ */
+
+.Features_1
+{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 660px; 
+    /* ^ margin-top: Distância total entre o topo da página e a seção. ^ */
+    /* ? Por algum motivo a seção não começa embaixo do Carrossel_1 ? */
+    border: none;
+    background-color: #0e1116;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1900px) 
+{
+    .Features_1
+    {
+        margin-top: 1%; 
+    }
+}
+
+.card_F_1
+{
+    height: 175px;
+    width: 350px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 50px;
+    background-image: url(./Recursos/Imagens/Home_Features_1_Images/Features_1_1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    position: relative;
+    box-shadow: 5px 5px 2px black;
+    transition: 1.2s;
+}
+
+.card_F_1:hover
+{
+    transform: rotateY(180deg);
+    transition: 1.2s;
+}
+
+.card_F_1::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor preta com 80% (ou 20% =/)de opacidade para escurecer o background */
+    transition: opacity 0.5s; /* Adiciona uma transição suave para a opacidade */
+    opacity: 0; /* Inicialmente transparente */
+}
+
+.card_F_1:hover::before 
+{
+    opacity: 1; /* Torna o fundo escuro visível durante o hover */
+}
+
+.Paragrafo_F_1_C_Oculto
+{
+    display: none; /* Inicialmente oculto */
+    margin-top: 3px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotateY(180deg);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    filter: drop-shadow(3px 3px 1px black);
+}
+
+.card_F_1:hover .link_card_F_1 
+{
+    transform: translateY(-1px);
+}
+
+.card_F_1:hover p 
+{
+    display: block; /* Exibe o parágrafo quando ocorre o hover */
+}
+
+.link_card_F_1
+{
+    color: #fe5001;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-top: 65px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow(3px 3px 1px black);
+    transform: rotateY(0deg); /* Mantém o link na posição normal */
+}
+
+.card_F_1:hover .link_card_F_1 
+{
+    transform: rotateY(180deg); /* Garante que o link permaneça na posição normal */
+}
+
+.link_card_F_1:hover
+{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px #fe5001);
+}
+
+.Sub_titulo_F_1
+{
+    color: #fe5001;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 95px;
+    margin-right: 95px;
+    /* ^ margin-left e  margin-right adicionadas para que os cards não fiquem assimétricos na tela. ^ */
+}
+
+.Paragrafo_F_1
+{
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 50px;
+}
+
+.btn_F_1  /* ! ------ PADRONIZAÇÂO DOS BOTÕES (copiar depois para a classe "btn") ------ ! */
+{
+    height: 45px;
+    width: 115px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_F_1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_F_1:hover,
+.btn_F_1 a:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+/* * 4 -------------------------------------------------- Carrossel_2 -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 06/04/2024 ^ */
+
+.Carrossel_2
+{
+    margin-top: 40px;
+}
+
+.Carrossel_2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100vw;
+    z-index: 2;
+    position: relative;
+}
+
+.C2_esquerda
+{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50%;
+    background-color: #0e1116;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    position: relative;
+}
+
+.C2_Itens 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.C2_slides_1 
+{
+    position: absolute; /* Para que as imagens possam ser posicionadas dentro do contêiner */
+    width: 100%; /* Para ocupar todo o espaço disponível */
+    height: 100%; /* Para ocupar todo o espaço disponível */
+    object-fit: cover; /* Para manter a proporção da imagem */
+    overflow: hidden; /* Para que as imagens fiquem dentro do contêiner */
+}
+
+.Setas_C2 
+{
+    position: absolute;
+    top: 50%;
+}
+
+.btn_C2_Setas
+{
+    z-index: 100;
+    display: inline-flex;
+    height: 40px;
+    width: 20px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    font-style:normal ;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #0e1116;
+    color: white;
+    opacity: 0.7;
+    border: none;
+    border-radius: 0px;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: .5s;
+}
+
+.Seta_Avançar_C2
+{
+    margin-left: 600px;
+}
+
+
+.Seta_Voltar_C2
+{
+    margin-left: 30px;
+}
+
+.btn_C2_Setas:hover
+{
+    background-color: white;
+    color: #0e1116;
+}
+
+.C2_direita
+{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 50%;
+    background-color: #040b14;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    gap: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.Conteudo_C2
+{
+    z-index: 3;
+    color: white;
+    padding: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+    min-height: 50%;
+    overflow: auto;
+}
+
+.C2_P
+{
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.C2_Check
+{
+    color: #fe5001;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.C2_h4
+{
+    margin-top: 10px;
+}
+
+#Horario_operacao, #regras_regulamentos
+{
+    color: #fe5001;
+    text-decoration: none;
+}
+
+#Horario_operacao:hover, #regras_regulamentos:hover
+{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px #fe5001);
+}
+
+/* * 5 -------------------------------------------------- Pricing_1 -------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ Modificado e Padronizado - 07/04/2024 ^ */
+
+.Pricing_1
+{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Titulo_P_1
+{
+    color: #d2541f;
+}
+
+.botões_P_1
+{
+    margin-left: 80px;
+}
+
+@media (min-width: 1900px)/* ^ 17/04/2024 ^ */
+{
+    .Pricing_1
+    {
+        display: block;
+        height: 60vh;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .Titulo_P_1
+    {
+        margin-left: 80px;
+    }
+    .botões_P_1
+    {
+        margin-left: 356px;
+    }
+    .P_1_h3
+    {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        font-size: larger;
+    }
+}
+
+.btn_P_1
+{
+    margin-top: 20px;
+    height: 30px;
+    width: 98px;
+    background-color: #d2541f;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    border: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 1px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_P_1:hover
+{
+    color: black;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.Titulo_P_1
+{
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.cards_P_Open, .cards_P_Eventos, .cards_P_Treinamentos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    gap: 130px;
+    transition: .5s;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+
+.cards_P_1_Open_1, .cards_P_1_Open_2, .cards_P_1_Open_3,
+.cards_P_1_Eventos_1, .cards_P_1_Eventos_2, .cards_P_1_Eventos_3
+{
+    background-color: #040b14;
+    height: 300px;
+    width: 300px;
+    box-shadow: 3px 3px 2px black;
+    padding: 0px;
+}
+
+.cards_P_1_Treinamentos_1, .cards_P_1_Treinamentos_2, .cards_P_1_Treinamentos_3
+{
+    background-color: #040b14;
+    height: 230px;
+    width: 300px;
+    box-shadow: 3px 3px 2px black;
+    padding: 0px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 1320px) 
+{
+    .cards_P_Open,
+    .cards_P_Eventos,
+    .cards_P_Treinamentos 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.P_1_h3
+{
+    color: #fe5001;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #b3b8bc;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.P_1_p
+{
+    color: #857058;
+    margin-top: 20px;
+    padding: 5px;
+    
+}
+
+.P_1_p > span
+{
+    color: #fe5001;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.P_1_h2
+{
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.P_1_hr
+{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+.btn_P_1_Agendar
+{
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    background-color: #fe5001;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_P_1_Agendar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_P_1_Agendar:hover,
+.btn_P_1_Agendar a:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+
+/* * 6 ---------------------------------------------------- Hero_1 ----------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado e Padronizado - 09/04/2024 ^ */
+
+.Hero_1
+{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    gap: 30%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Hero_1_Background
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.Hero_1_Img
+{
+    width: 100%;
+
+}
+
+.Hero_1_Box_1
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 30%;
+    z-index: 2;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: -60%;
+    margin-left: 5%;
+}
+
+.Hero_1_Box_2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 30%;
+    z-index: 2;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: -60%;
+    margin-right: 5%;
+}
+
+.H_1_h2
+{
+    color: white;
+    margin-bottom: 40px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.H_1_h2 span
+{
+    color: #fe5001;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.H_1_p
+{
+    color: white;
+    margin-bottom: 40px;
+    padding: 3%;
+    font-size: 18px;
+    letter-spacing: normal;
+    filter: drop-shadow(2px 2px 2px black);
+    font-weight: bold;
+}
+
+.btn_H_1
+{
+    height: 45px;
+    width: 115px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_H_1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_H_1:hover,
+.btn_H_1 a:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+/* * 8 -------------------------------------------------- Carrossel_3 -------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 06/04/2024 ^ */
+
+.Carrossel_3
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 90%;
+    z-index: 2;
+    position: relative;
+    background-color: #857058;
+    align-self: center;
+    margin-top: 0;
+}
+
+@media (max-width: 1320px) 
+{
+    .Carrossel_3
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.C3_esquerda
+{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 60%;
+    background-color: #040b14;
+    padding: 0;
+    z-index: 2;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    position: relative;
+}
+
+.C3_Itens 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.C3_slides 
+{
+    position: absolute; /* Para que as imagens possam ser posicionadas dentro do contêiner */
+    width: 100%; /* Para ocupar todo o espaço disponível */
+    height: 100%; /* Para ocupar todo o espaço disponível */
+    object-fit: cover; /* Para manter a proporção da imagem */
+    overflow: hidden; /* Para que as imagens fiquem dentro do contêiner */
+}
+
+.C3_direita
+{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 40%;
+    background-color: #857058;
+    border: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.C3_01,
+.Conteudo_C3_1 
+{
+    display: block
+}
+
+.Conteudo_C3_2,
+.Conteudo_C3_3 
+{
+    display: none;
+}
+
+.Titulo_C3
+{
+    color: #b3b8bc;
+}
+
+.C3_P
+{
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.C3_Check
+{
+    color: #fe5001;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.C3_h4
+{
+    margin-top: 10px;
+}
+
+#veja_mais
+{
+    color: #fe5001;
+    text-decoration: none;
+}
+
+#veja_mais:hover
+{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px #fe5001);
+}
+
+.Btns_C3 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw; /* Defina a largura adequada */
+    justify-content: center; /* Centralize os botões horizontalmente */
+    position: relative;
+    background-color: #0e1116;
+    margin-top: 20px;
+    margin-bottom: 3%;
+}
+
+.btn_quadrado 
+{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #d2541f;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 5px; /* Adicione margem entre os botões */
+}
+
+.btn_quadrado:hover
+{
+    border: 3px solid white;
+}
+
+
+/* * 9 ---------------------------------------------------- Hero_2 ----------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado e Padronizado - 09/04/2024 ^ */
+
+.Hero_2
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Hero_2_Background
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+}
+
+.Hero_2_Img
+{
+    width: 100%;
+
+}
+
+.Hero_2_Box
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 62%;
+    width: 45%;
+    z-index: 2;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -65%;
+    margin-left: 4%;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .Hero_2_Box
+    {
+        display: block;
+    }
+
+}
+
+.H_2_h2
+{
+    color: #fe5001;
+    margin-bottom: 5%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.H_2_p
+{
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    letter-spacing: normal;
+    filter: drop-shadow(2px 2px 2px black);
+    font-weight: bold;
+}
+
+.H_2_p span
+{
+    color: #fe5001;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+.btn_H_2
+{
+    height: 45px;
+    width: 115px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_H_2 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_H_2:hover,
+.btn_H_2 a:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+/* * 10 -------------------------------------------------- Features_2 ------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ Modificado e Padronizado - 08/04/2024 ^ */
+
+.Features_2 
+{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    width: 100vw;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1900px) 
+{
+    .Features_2 
+    {
+        height: 60vh;
+        display: block;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.Titulo_F_2 
+{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #d2541f;
+}
+
+.Cards_F2_Todos 
+{
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(4px 4px 2px black);
+}
+
+@media (max-width: 1320px) 
+{
+    .Cards_F2_Todos 
+
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Cards_F2_Todos, a
+{
+    text-decoration: none;
+}
+
+.Cards_F2_1, .Cards_F2_2, .Cards_F2_3 
+{
+    width: 350px;
+    height: 352px;
+    background-color: #040b14;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn_F_2_Tag 
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #857058;
+    color: #040b14;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.btn_F_2_Tag:hover
+{
+    background-color: #040b14;
+    color: white;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.F2_Img_blog 
+{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.F2_h4
+{
+    text-align: center;
+    margin-top: 20px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.F2_h4 a
+{
+    color: #d2541f;
+}
+
+.F2_h4 a:hover
+{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 3px #d2541f);
+}
+
+.F2_h5_Box
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #857058;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0 40px;
+}
+
+.F2_h5 a
+{
+    color: #b3b8bc;
+}
+
+.F2_h5 a:hover
+{
+    color: #040b14;
+    letter-spacing: 1px;
+}
+
+.Blog_Data
+{
+    flex: 1;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.Blog_Comentarios 
+{
+    flex: 1;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+
+/* * 11 ---------------------------------------------------- Hero_3 ----------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado e Padronizado - 10/04/2024 ^ */
+
+.Hero_3
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Hero_3_Background
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+}
+
+.Hero_3_Img
+{
+    width: 100%;
+    filter: opacity(0.4);
+}
+
+.Hero_3_Box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    z-index: 2;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+    margin-top: -58%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.H_3_h2
+{
+    color: #fe5001;
+    margin-bottom: 5%;
+    font-weight: bolder;
+    filter: drop-shadow(2px 2px 2px black);
+    -webkit-filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+    filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+}
+
+.H_3_p
+{
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    letter-spacing: normal;
+    filter: drop-shadow(2px 2px 2px black);
+    font-weight: bolder;
+    -webkit-filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+    filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+}
+
+.H_3_p span
+{
+    color: #fe5001;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+.btn_H_3
+{
+    height: 45px;
+    width: 115px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_H_3:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+/* * 12 -------------------------------------------------- Card_Contato ------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ Modificado e Padronizado - 08/04/2024 ^ */
+
+.Card_Contato
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100vw;
+}
+
+@media (max-width: 1320px)
+{
+    .C_C_Box 
+    {
+        flex-direction: column !important;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        width: 80vw;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+}
+
+.C_C_Box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}
+
+.C_C_Box_1
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+@media (max-width: 1320px)
+{
+    .C_C_Box_1, .C_C_Box_3
+    {
+        flex-direction: column !important;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        width: 80vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.C_C_Box_2
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.C_C_Box_3
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.C_C_Logo
+{
+    width: 45vw;
+    height: 35vw;
+    margin-right: 20%;
+    margin-left: 10%;
+    object-fit: cover;
+    -webkit-filter: drop-shadow(2px 2px 3px #fe5001) drop-shadow(-2px -2px 3px #fe5001); /* ! Gambiarra para contornar o png com brilho ! */
+    filter: drop-shadow(2px 2px 3px #fe5001) drop-shadow(-2px -2px 3px #fe5001);         /* ^ 08/04/2024 ^ */
+}
+
+.C_C_h4
+{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fe5001;
+    font-weight: bold;
+}
+
+.C_C_p_email
+{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#id_h4_enderecos
+{
+    margin-top: 72px;
+}
+
+.C_C_p_endereço
+{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.C_C_Line
+{
+    width: 100vw;
+    height: 15px;
+    background-color: #fe5001;
+}
+
+/* * 13 ---------------------------------------------------- Footer_1 --------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado e Padronizado - 08/04/2024 ^ */
+
+.Footer_1
+{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin-top: 1%;
+}
+
+.Footer_1_Line
+{
+    width: 100vw;
+    height: 15px;
+    background-color: #009ff0;
+    margin-top: 1.5%;
+}
+
+
+/* * 13.1 -------------------------------------------------- Footer_2 --------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado e Padronizado - 08/04/2024 ^ */
+
+.Footer_2
+{
+    width: 100vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+    margin: 0;
+}
+
+.Footer_2_Box_1
+{
+    position: relative;
+    margin-top: 30px;
+    width: 45%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3%;
+    margin: 0;
+}
+
+.Footer_2_Box_2
+{
+    margin-top: 20px;
+    width: 50%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+@media (max-width: 1300px)
+{
+    .Footer_2
+    {
+        flex-direction: column !important;
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .Footer_2
+    {
+        flex-direction: column !important;
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 580px)
+{
+    .Footer_2
+    {
+        flex-direction: column !important;
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 500)
+{
+    .Footer_2
+    {
+        overflow: hidden;
+    }
+}
+
+.Footer_2_Werewolf_Logo
+{
+    width: 28vw;
+    height: 28vw;
+    object-fit: cover;
+}
+
+.Footer_2_Werewolf_Logo:hover
+{
+    -webkit-filter: drop-shadow(3px 3px 4px #009ff0) drop-shadow(-3px -3px 4px #009ff0); /* ! Gambiarra para contornar o png com brilho ! */
+    filter: drop-shadow(3px 3px 4px #009ff0) drop-shadow(-3px -3px 4px #009ff0);         /* ^ 08/04/2024 ^ */
+}
+
+.Footer_2_h5
+{
+    text-align: center;
+    color: white;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 1px black);
+    letter-spacing: 5px;
+    line-height: 45px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1900px) 
+{
+    .Footer_2_h5
+    {
+        font-size: 25px;
+    }
+}
+
+.TCC_desenvolvimento
+{
+    margin-bottom: 30px;
+}
+
+.Footer_2_h5 span
+{
+    color: #009ff0; /* ! Guardar cor para o outro site (Azul Claro)! */
+}
+.Footer_2_h5 span:hover
+{
+    color: White;
+    filter: drop-shadow(1px 1px 8px #009ff0);
+}
+
+.Footer_2_p
+{
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* * EVENTOS -------------------------------------------------- IMAGEM_PADRÃO --------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 18/04/2024 ^ */
+
+.imagem_padrao
+{
+    height: 76vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0% 10%;
+    opacity: 0.7;
+}
+
+.TITULO_EVENTOS
+{
+    margin-top: -18%;
+    text-align: center;
+    color: #fe5001;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    -webkit-filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+    filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+}
+
+.Line_Padrao
+{
+    width: 100vw;
+    height: 15px;
+    background-color: #fe5001;
+    margin-top: 15%; /*(14%)*/
+}
+
+/* * EVENTOS -------------------------------------------------- CALENDÁRIO --------------------------------------------------- * */
+/* ~ Wanderson ~ */
+/* ^ 18/04/2024 ^ */
+
+.Calendario
+{
+    width: 60vw;    /* ! Diminui o calendário ! */
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    margin: 2% 5%;
+}
+
+.cal_header 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    background-color: #857058;
+    color: #fe5001;
+    font-weight: bold;
+    -webkit-filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+    filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+}
+
+.btn_eventos
+{
+    color: #fe5001;
+    background-color: transparent;
+    font-weight: bolder;
+    border: none;
+    height: 72px;
+    width: 1%;
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.btn-e_voltar   /* ! Tentar fixar os botões em uma posição ! */
+{
+    position: absolute;
+    transform: translate(-3200%, -4%);
+}
+
+.btn-e_avançar  /* ! Tentar fixar os botões em uma posição ! */
+{
+    position: absolute;
+    transform: translate(3050%, -4%);
+}
+
+.btn_eventos:hover
+{
+    color: #040b14;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.cal_mes_ano 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.cal_m_nome, .cal_m_ano 
+{
+    margin: 1% 9%;
+}
+
+.cal_dias_semana 
+{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 60vw;    /* ! Diminui o calendário ! */
+    background-color: #b3b8bc;
+    color: #040b14;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.cal_dias_semana > h3
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold; 
+    filter: drop-shadow(2px 2px 3px black);
+}
+
+.cal_dias 
+{
+    display: grid;
+    color: white;
+    width: 60vw;    /* ! Diminui o calendário ! */
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.btn_dias
+{
+    background-color: transparent;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    padding: 35%;
+    border: 1px solid #b3b8bc;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.btn_dias:hover
+{
+    background-color: #fe5001;
+    color: #040b14;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.Line_E_Bottom
+{
+    width: 100vw;
+    height: 15px;
+    background-color: #fe5001;
+    margin-top: 1%;
+}
+
+/* * CONTATO -------------------------------------------------- CONTATO_HEADER --------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ 30/04/2024 ^ */
+/* ^ Modificado e Padronizado - 01/05/2024 ^ */
+
+.img_contato_1
+{
+    height: 500px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0% 10%;
+    opacity: 0.7;
+    margin: 0;;
+}
+
+.TITULO_CONTATO
+{
+    margin-top: -257px;
+    text-align: center;
+    color: #fe5001;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    -webkit-filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+    filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+}
+
+.Contato_Line_Padrao
+{
+    width: 100vw;
+    height: 15px;
+    background-color: #fe5001;
+    margin-top: 209px;
+}
+
+/* * CONTATO -------------------------------------------------- CONTATO --------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ 30/04/2024 ^ */
+/* ^ Modificado e Padronizado - 01/05/2024 ^ */
+
+.Box_icones 
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items:baseline;
+    align-content:center;
+    align-self:center;
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .Box_icones
+    {
+        display: block;
+    }
+}
+
+.Box_icones, h4, p 
+{
+    color: white;
+    margin-top: 2%;
+}
+
+.contato_p
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.Box_icones span
+{
+    color: #fe5001;
+    font-weight: bold;
+}
+
+.Img_endereço_1,
+.Img_endereço_2,
+.Img_telefone,
+.Img_email,
+.Img_relogio 
+{
+    color: white;
+}
+
+.Box_endereço,
+.Box_telefone,
+.Box_email,
+.Box_horario
+{
+    padding: 1%;
+}
+
+/* * CONTATO ----------------------------------------------- CONTATO_FORM --------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ 30/04/2024 ^ */
+/* ^ Modificado - 01/05/2024 ^ */
+
+.container_form 
+{
+    display: flex;
+    margin: 2% 4%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #857058;
+    width: 90%;
+}
+
+.C_F_box_1,
+.C_F_box_2
+{
+    width: 50%;
+    flex-direction: column;
+    object-fit: cover;
+    background-color: #857058;
+}
+
+.img_contato_map
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.box_form 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    width: 90%;
+    padding: 2%;
+    margin: 5%;
+    object-fit: cover;
+}
+
+.form_title 
+{
+    color: #fe5001;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.label_nome,
+.label_email,
+.label_mensagem
+{
+    display: flex;
+    margin-bottom: -15px;
+}
+
+.input_nome,
+.input_email,
+.input_mensagem
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn_C_custom
+{
+    height: 6%; /* ! Adaptação de tamanho ! */
+    margin-bottom: 2%;
+}
+
+/* * CONTATO -------------------------------------------------- Card_Contato --------------------------------------------------- * */
+/* ~ Felipe ~ */
+/* ^ 30/04/2024 ^ */
+/* ^ Modificado - 01/05/2024 ^ */
+
+.Contato_Top_line
+{
+    margin-top: 0;
+}
+
+.Contato_Bottom_line
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Contato_Box_Esq,
+.Contato_Box_Dir,
+.Contato_Box_Cen
+{
+    margin-top: 1%;
+}
+
+.Contato_CC_h4
+{
+    margin-bottom: 10px;
+}
+
+.Contato_CC_A1,
+.Contato_CC_A2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Contato_CC_End_1,
+.Contato_CC_End_2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* * CONTATO -------------------------------------------------- Contato_Footer --------------------------------------------------- * */
+/* ~ Matthew ~ */
+/* ^ Modificado - 01/05/2024 ^ */
+
+.Contato_Footer_p
+{
+    margin-top: 0;
+}
+
+/* * LOGIN_CADASTRO --------------------------------------------- FORMULÁRIO ------------------------------------------------------ * */
+/* ~ Felipe ~ */
+/* ^ 04/05/2024 ^ */
+/* ^ Modificado: 11/05/2024 ^ */
+
+dialog 
+{
+    position: fixed;
+    transform: translate(150%, 35%); /* para resolução (1360 x 768) 85%, 15% */
+    padding: 20px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1400px)
+{
+    dialog
+    {
+        transform: translate(85%, 15%);
+    }
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Estilo para o modal */
+.modal
+{
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    padding: 30px;
+    background: #0e1116;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+/* Estilo para esconder o modal */
+.modal[open] 
+{
+    display: block;
+}
+
+.modal::backdrop 
+{
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.modal #signupDialog::backdrop 
+{
+    background-color: none;
+}
+
+.fechar_modal_login,
+.fechar_modal_signup
+{
+    position: absolute;
+    width: 4%;
+    transform: translate(995%, -75%);
+}
+
+.fechar_modal_login:hover,
+.fechar_modal_signup:hover
+{
+    cursor: pointer;
+    -webkit-filter: drop-shadow(3px 3px 4px #fe5001) drop-shadow(-3px -3px 4px #fe5001);
+    filter: drop-shadow(3px 3px 4px #fe5001) drop-shadow(-3px -3px 4px #fe5001);
+}
+
+/* Estilo para o cabeçalho */
+.modal header 
+{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo para os campos de entrada */
+.modal .field 
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal input[type="nome"],
+.modal input[type="sobrenome"],
+.modal input[type="cpf"],
+.modal input[type="email"],
+.modal input[type="password"] 
+{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal input:focus 
+{
+    border-bottom-width: 2px;
+}
+
+/* Estilo para o ícone de olho */
+/* ^ BUGADO ^ */
+/* ! BUGADO ! */
+/* ~ BUGADO ~ */
+/* ? BUGADO ? */
+
+.modal .eye-icon 
+{
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    height: 75%;
+    width: 15%;
+    transform: translateY(5%);
+    font-size: 18px;
+    color: black;
+    background-color: green;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+/* Estilo para os botões */
+.modal button 
+{
+    color: #fff;
+    background-color: #fe5001;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Estilo para os links */
+.modal a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para o texto "Ou" */
+.modal .line 
+{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: white;
+}
+
+.modal .line::before 
+{
+    content: "Ou";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #262626;
+    padding: 0 15px;
+}
+
+/* Estilo para as opções de mídia */
+.modal .media-options a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para a imagem do Google */
+.modal img#logogoogle 
+{
+    margin-right: 20px;
+}
+
+/* Estilo para o botão do Google */
+.modal a.google 
+{
+    background-color: white;
+}
+
+.modal a.google span 
+{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #262626;
+}
+
+/* Estilo para o hover do botão do Google */
+.modal .btn_G_1:hover 
+{
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+/* Estilo para o link de "Esqueceu sua senha?" */
+.modal .forgot-pass 
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #d2541f;
+}
+
+/* Estilo para o link de "Não possui uma conta? Inscrever-se" e "Já possui uma conta? Login" */
+.modal .signup-link,
+.modal .login-link 
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #d2541f;
+    text-decoration: none;
+}
+
+/* Estilo para o hover dos links de "Não possui uma conta? Inscrever-se" e "Já possui uma conta? Login" */
+.modal .signup-link:hover,
+.modal .login-link:hover 
+{
+    text-decoration: underline;
+}
+
+.form_text
+{
+    color: white;
+}
+
+.BIG_BOX_1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.box_1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0.5%;
+}
+
+.box_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0.5%;
+}
+
+
+/* * INFO --------------------------------------------- SOBRE_NÓS ------------------------------------------------------ * */
+/* ~ Matthew ~ */
+/* ^ 10/05/2024 ^ */
+/* ^ Modificado: 11/05/2024 ^ */ 
+
+.sobre_nos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262626;
+}
+
+.sobre_nos h3
+{
+    color: white;
+    margin: 4%;
+}
+
+.sobre_titulo
+{
+    color: #fe5001;
+}
+
+.sobre_BOX
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #040b14;
+}
+
+.sobre_BOX_E
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    margin: 1%;
+    padding: 3%;
+    width: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .sobre_BOX_E
+    {
+        display: block;
+    }
+}
+
+.sobre_BOX_D
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    padding: 3%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.sobre_imagem
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.laranja
+{
+    color: #fe5001;
+    font-weight: bold;
+}
+
+/* * INFO --------------------------------------------- ESTRUTURA ------------------------------------------------------ * */
+/* ~ Matthew ~ */
+/* ^ 10/05/2024 ^ */
+/* ^ Modificado: 11/05/2024 ^ */
+
+.estrutura
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262626;
+}
+
+.estrutura_titulo
+{
+    color: #fe5001;
+    padding: 1%;
+    width: 100%;
+}
+
+.estrutura h2
+{
+    margin-bottom: 0;
+}
+
+.estrurura_BOX
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #040b14;
+}
+
+.estrutura_BOX_E
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    width: 50%;
+    object-fit: cover;
+}
+
+.imagem_box_base,
+.imagem_box_campo
+{
+    
+    width: 100%;
+    background-color: #040b14;
+}
+
+.img_indoor
+{
+    width: 100%;
+}
+
+
+.estrutura_BOX_D
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    width: 50%;
+    object-fit: cover;
+    padding: 3%;
+}
+
+.texto_box
+{
+    color: white;
+    margin: 2%;
+    
+}
+
+.texto_box h2
+{
+    color: #fe5001;
+}
+
+.e_titulo
+{
+    margin: 4%;
+}
+
+.E_box_2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+    background-color: #040b14;
+}
+
+.estrutura_BOX_E_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: justify;
+    width: 50%;
+    object-fit: cover;
+    padding: 3%;
+}
+
+.estrutura_BOX_D_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    object-fit: cover;
+}
+
+.img_outdoor
+{
+    width: 100%;
+}
+
+
+/* * INFO --------------------------------------------- REGRAS ------------------------------------------------------ * */
+/* ~ Matthew ~ */
+/* ^ 10/05/2024 ^ */
+/* ^ Modificado: 11/05/2024 ^ */
+
+.regras
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262626;
+}
+
+.regras_BIG_BOX
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: justify;
+    text-align: justify;
+    width: 100%;
+    background-color: #262626;
+    padding: 3%;
+}
+
+.regras_intro_texto
+{
+    text-align: center;
+    margin-top: -1%;
+}
+
+.regras_BIG_BOX h3
+{
+    color: #fe5001;
+}
+
+.regras_BIG_BOX ul
+{
+    color: white;
+    margin-left: 2.5%;
+    font-size: 17px;
+}
+
+.regras_sub_titulo
+{
+    text-align: left;
+}
+
+.regras_titulo
+{
+    color: #fe5001;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    margin-top: -2%;
+}
+
+/* * EVENTOS --------------------------------------------- FORMULÁRIO ------------------------------------------------------ * */
+/* ~ Wanderson ~ */
+/* ^ 27/04/2024 ^ */
+/* ^ Modificado: 12/05/2024 ^ */
+
+.modal_2
+{
+    background: #0e1116;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    filter: drop-shadow(5px 5px 2px black);
+    position: fixed;
+    padding: 1%;
+}
+
+
+/* Estilo para esconder o modal */
+.modal_2[open] 
+{
+    display: block;
+}
+
+.modal_2::backdrop 
+{
+    background-color: rgba(0, 0, 0, 65%);
+}
+
+.fechar_modal_Agendamento
+{
+    width: 3%;
+    transform: translate(1585%, -25%);
+}
+
+.fechar_modal_Agendamento:hover
+{
+    cursor: pointer;
+    -webkit-filter: drop-shadow(3px 3px 4px #fe5001) drop-shadow(-3px -3px 4px #fe5001);
+    filter: drop-shadow(3px 3px 4px #fe5001) drop-shadow(-3px -3px 4px #fe5001);
+}
+
+.formulario-agendamento
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+    color: #fe5001;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    filter: drop-shadow(3px 3px 4px black) drop-shadow(-3px -3px 4px black);
+}
+
+.TITULO_Form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: -4%;
+    margin-bottom: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fe5001;
+}
+
+.data_selecionada
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 1.5%;
+    font-weight: 300;
+}
+
+.form_Agendamento_box_1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin: 1.5%;
+    font-weight: bold;
+}
+
+.Checkb_box_1
+{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    color: #fe5001;
+}
+
+.Checkb
+{
+    display: flex;
+    margin: 2%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    margin-right: 10px;
+    accent-color: #fe5001; /* cor da checkbox */
+}
+
+.opçoes_form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align:justify ;
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+.btn_FA_1
+{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
+.horarios
+{
+    color: white;
+    accent-color: #fe5001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 2%;
+    font-weight: bold;
+}
+
+.Checkb_Horario
+{
+    
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.form_Agendamento_BOX
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    border: #d2541f solid 2px;
+}
+
+.form_Agendamento_BOX_1
+{
+    width: 50%;
+    padding: 1%;
+    margin-left: 12%;
+}
+
+.form_Agendamento_BOX_2
+{
+    width: 50%;
+    padding: 1%;
+    margin-right: 12%;
+}
+
+/* * LOJA --------------------------------------------- PRODUTOS ------------------------------------------------------ * */
+/* ~ Wanderson ~ */
+/* ^ 13/05/2024 ^ */
+/* ^ Modificado: 18/05/2024 ^ */
+
+.loja_produtos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 95%;
+}
+
+.produto_big_box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+.produto_imagem
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+}
+
+.descricao_big_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    padding: 4% 1%;
+}
+
+.produto_valor,
+.produtos_mais_h3
+{
+    color: #fe5001;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.produto_desc_div_line
+{
+    margin-top: -3%;
+    background-color: white;
+    color: white;
+    height: 3px;
+}
+
+.produtos_lista_big_box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1%;
+}
+
+.box_lista_produtos_1,
+.box_lista_produtos_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.btn_Produto,
+.btn_Produto_short,
+.btn_Produto_card
+{
+    height: 45px;
+    width: 275px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px black;
+    transition: .5s;
+}
+
+.btn_Produto:hover,
+.btn_Produto_short:hover,
+.btn_Produto_card:hover
+{
+    color: black;
+    background-color: #fe5001;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.produto_div_line
+{
+    height: 3px;
+    background-color: white;
+    color: white;
+}
+
+.produtos_mais_produtos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.produtos_cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 90%;
+    margin: 2%;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.Prod_cards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 30%;
+    margin: 2%;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.imagem_prod_card
+{
+    width: 100%;
+    filter: drop-shadow(2px 2px 1px black);
+    z-index: 8;
+}
+
+.Prod_card_nome
+{
+    background-color: #262626;
+    width: 100%;
+    color: #d2541f;
+    font-weight: bold;
+    margin: 0%;
+    filter: drop-shadow(2px 2px 1px black);
+    z-index: 7;
+}
+
+.Prod_card_valor
+{
+    background-color: #b3b8bc;
+    width: 100%;
+    color: #040b14;
+    font-weight: bold;
+    margin: 0%;
+    filter: drop-shadow(2px 2px 1px black);
+    z-index: 6;
+}
+
+.btn_Produto_card
+{
+    margin: 0%;
+    z-index: 5;
+}
+
+/* * SECURITY_LAYER --------------------------------------------- NÍVEL_1 ------------------------------------------------------ * */
+/* ~ Wanderson ~ */
+/* ^ 23/05/2024 ^ */
+
+.modal_2
+{
+    max-width: 1100px;
+    max-height: 550px;
+    transform: translate(11%, 8%);
+}
+
+.modal_2 > .X
+{
+    width: 2%;
+    transform: translate(2255%, 5%);
+    
+}
+
+.BIG_BOX_form_cad
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:flex-start ;
+    align-content: center;
+    align-self: center;
+    text-align: left;
+    width: 100%;
+    margin: 1%;
+}
+
+.box_left,
+.box_center,
+.box_right
+{
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+    object-fit: contain;
+}
+
+.laranja_2
+{
+    color: #d2541f;
+}
+
+.val_line
+{
+    display: none;
+    height: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+}
+
+.val_line
+{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #0e1116;
+}
+
+.val_line_1
+{
+    background-color: #fe5001;
+
+}
+
+.val_line_2
+{
+    background-color: #F0602B;
+}
+
+.val_line_3
+{
+    background-color: #D48180;
+}
+
+.val_line_4
+{
+    background-color: #C691AA;
+}
+
+.val_line_5
+{
+    background-color: #AAB2FF;
+}
