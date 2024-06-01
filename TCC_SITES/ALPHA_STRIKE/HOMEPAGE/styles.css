@@ -3347,6 +3347,154 @@ dialog
     z-index: 5;
 }
 
+/* * BLOG ----------------------------------------------------- INICIAL ----------------------------------------------------------- * */
+/* ~ Diego ~ */
+/* ~ Wanderson ~ */
+/* ^ 31/05/2024 ^ */
+
+.BLOG
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.Blog_Box_Esq
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-start;
+    text-align: center;
+    width: 65%;
+    margin: 1%;
+    margin-right: 0.1%;
+}
+
+.Blog_Box_Dir
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-start;
+    text-align: center;
+    width: 30%;
+    margin: 1%;
+    margin-left: 0.1%;
+    margin-top: 5.8%;
+}
+
+.Blog_Artigo_Card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.BA_Titulo
+{
+    color: white
+}
+
+.BA_Titulo_Categorias
+{
+    color: #fe5001;
+}
+
+.BA_Imagem
+{
+    width: 100%;
+}
+
+.Blog_categorias
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    align-self: flex-start;
+    text-align: center;
+    height: 40vh;
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    background-color: #262626;
+}
+
+.BA_Lista_categorias
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1%;
+}
+
+.BA_Link_Categoria
+{
+    text-decoration: none;
+    color: white;
+}
+
+.BA_Link_Categoria:hover
+{
+    text-decoration: underline;
+    color: #fe5001;
+    letter-spacing: 2px;
+}
+
+.Blog_Artigo_link:hover
+{
+    letter-spacing: 1px;
+    -webkit-filter: drop-shadow(1px 1px 2px #fe5001) drop-shadow(-1px -1px 2px #fe5001);
+    filter: drop-shadow(1px 1px 2px #fe5001) drop-shadow(-1px -1px 2px #fe5001);
+}
+
+/* * BLOG ----------------------------------------------------- ARTIGO ----------------------------------------------------------- * */
+/* ~ Diego ~ */
+/* ~ Wanderson ~ */
+/* ^ 31/05/2024 ^ */
+
+.Blog_Artigo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    text-align: justify;
+    width: 100%;
+    margin: 1%;
+    margin-top: 5.7%;
+    padding: 2%;
+}
+
+.BA_Titulo_Artigo
+{
+    color: #fe5001;
+}
+
+.BA_SubTitulo_Artigo
+{
+    color: #d2541f;
+}
+
+
+
 /* * SECURITY_LAYER --------------------------------------------- NÍVEL_1 ------------------------------------------------------ * */
 /* ~ Wanderson ~ */
 /* ^ 23/05/2024 ^ */
