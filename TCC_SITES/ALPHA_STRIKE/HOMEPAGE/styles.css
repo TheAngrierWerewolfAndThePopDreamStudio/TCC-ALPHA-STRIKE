@@ -3236,7 +3236,7 @@ dialog
 .btn_Produto_card
 {
     height: 45px;
-    width: 275px;
+    width: 400px;
     background-color: #fe5001;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
@@ -3328,6 +3328,7 @@ dialog
     margin: 0%;
     filter: drop-shadow(2px 2px 1px black);
     z-index: 7;
+    padding: 10px;
 }
 
 .Prod_card_valor
@@ -3339,6 +3340,7 @@ dialog
     margin: 0%;
     filter: drop-shadow(2px 2px 1px black);
     z-index: 6;
+    padding: 5px;
 }
 
 .btn_Produto_card
