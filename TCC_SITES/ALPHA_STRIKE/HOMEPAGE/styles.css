@@ -2927,6 +2927,9 @@ dialog {
   box-shadow: 3px 3px 2px black;
   transition: 0.5s;
 }
+.btn_Produto_card a{
+  color: white;
+}
 
 .btn_Produto:hover,
 .btn_Produto_short:hover,
