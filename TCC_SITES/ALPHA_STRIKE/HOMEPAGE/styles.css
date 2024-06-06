@@ -11,26 +11,31 @@
 |                                                              |
 \*------------------------------------------------------------*/
 
+/* CSS único para padronizar todas as página e economizar arquivos. */
+
 /* * 0 -------------------------------------------------- Padrão -------------------------------------------------- * */
 /* ~ Wanderson ~ */
 
-h1 {
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: "Roboto Condensed", sans-serif;
-  filter: drop-shadow(2px 2px 1px black);
+h1
+{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
 }
 
-h2 {
-  font-size: 30px;
-  font-family: "Roboto Condensed", sans-serif;
-  filter: drop-shadow(2px 2px 1px black);
+h2 
+{
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
 }
 
-h3 {
-  font-size: 25px;
-  font-family: "Roboto Condensed", sans-serif;
-  filter: drop-shadow(2px 2px 1px black);
+h3 
+{
+    font-size: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+    filter: drop-shadow(2px 2px 1px black);
 }
 
 h4 {
@@ -2273,10 +2278,7 @@ dialog {
 }
 
 /* Estilo para o ícone de olho */
-/* ^ BUGADO ^ */
-/* ! BUGADO ! */
-/* ~ BUGADO ~ */
-/* ? BUGADO ? */
+/* ^ BUGADO no Modal_2 / Funciona, mas não altera o ícone ^ */
 
 .modal .eye-icon {
   position: absolute;
@@ -3027,6 +3029,24 @@ dialog {
   z-index: 5;
 }
 
+.btn_Produto_card a:hover
+{
+    color: black;
+}
+    
+
+@media (max-width: 1400px) {
+    .produtos_cards
+    {
+        width: 95%;
+    }
+
+    .btn_Produto_card
+    {
+        width: 100%;
+    }
+}
+
 /* * BLOG ----------------------------------------------------- INICIAL ----------------------------------------------------------- * */
 /* ~ Diego ~ */
 /* ~ Wanderson ~ */
@@ -3169,6 +3189,13 @@ dialog {
   transform: translate(37%, 30%);
 }
 
+@media (max-width: 1400px) {    /* ^ 06/06/2024 ^ */
+    .modal_2
+    {
+        transform: translate(10.5%, 7%);
+    }
+}
+
 .modal_2 > .X {
   width: 2%;
   transform: translate(2255%, 5%);
@@ -3281,6 +3308,8 @@ body {
 .loja-item img {
   width: 100%;
   height: auto;
+  filter: drop-shadow(1px 1px 3px black);
+  z-index: 5;
 }
 
 .loja-item h4 {
@@ -3289,6 +3318,8 @@ body {
   padding: 15px;
   margin-bottom: 0px;
   margin-top: 0px;
+  filter: drop-shadow(1px 1px 3px black);
+  z-index: 4;
 }
 
 .btn_Loja_card {
@@ -3308,13 +3339,21 @@ body {
   box-shadow: 3px 3px 2px black;
   transition: 0.5s;
 }
-.btn_Loja_card:hover {
-  color: black;
-  background-color: #fe5001;
-  font-weight: bolder;
+
+@media (max-width: 14000px){
+    .btn_Loja_card
+    {
+        width: 100%;
+    }
+}
+
+.btn_Loja_card:hover,
+.btn_Loja_card a:hover {
+  font-weight: bold;
   font-size: large;
   letter-spacing: 3px;
   filter: drop-shadow(1px 1px 3px black);
+  color: black;
 }
 
 .btn_Loja_card a {
