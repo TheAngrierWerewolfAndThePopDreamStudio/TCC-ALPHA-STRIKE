@@ -2285,12 +2285,20 @@ dialog {
   height: 75%;
   width: 15%;
   transform: translateY(5%);
-  font-size: 18px;
-  color: black;
-  background-color: green;
+  font-size: 30px;
+  color: #ccc;
   cursor: pointer;
-  padding: 5px;
   z-index: 1001;
+}
+/* ? Tivemos que adicionar esse modal input pois a barra da senha diminuia quando clicavamos no eye para exibir a senha */
+.modal input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Estilo para os botões */

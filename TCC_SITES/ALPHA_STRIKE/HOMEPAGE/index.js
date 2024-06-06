@@ -305,8 +305,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// * ------------------------------------- EXIBIR/OCULTAR SENHA LOGIN ---------------------------------------\\
+// ~ Felipe, Matthew e Pedro \\
+// ^ 05/06/2024 ^ \\
+// Função para exibir e ocultar a senha do formulário de login
+function mostrarSenhaLogin() {
+  var inputPass = document.getElementById("senha");
+  var btnShowPass = document.getElementById("btn-senha-login");
+
+  // if ira mostrar a senha
+  if (inputPass.type === "password") {
+    inputPass.setAttribute("type", "text");
+    btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill");
+
+    // else ira ocultar a senha
+  } else {
+    inputPass.setAttribute("type", "password");
+    btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill");
+  }
+}
+
+// * ------------------------------------- EXIBIR/OCULTAR SENHA CADASTRO -------------------------------------\\
+// ~ Felipe, Matthew e Pedro \\
+// ^ 05/06/2024 ^ \\
+// Função para exibir e ocultar a senha do formulário de cadastro
+function mostrarSenhaCadastro() {
+  var inputPass = document.getElementById("senha_2");
+  var btnShowPass = document.getElementById("btn-senha-cadastro");
+
+  // if ira mostrar a senha
+  if (inputPass.type === "password") {
+    inputPass.setAttribute("type", "text");
+    btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill");
+
+    // else ira ocultar a senha
+  } else {
+    inputPass.setAttribute("type", "password");
+    btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill");
+  }
+}
+
 // * ------------------------------------- SECURITY_LAYER/NÍVEL_1 ---------------------------------------------\\
 // ^ 23/05/2024 ^ \\
+// ^ Modificado: 05/06/2024 ^ \\
 
 // Função para verificar a senha e alterar a cor dos itens da lista
 function verificarSenha() {
