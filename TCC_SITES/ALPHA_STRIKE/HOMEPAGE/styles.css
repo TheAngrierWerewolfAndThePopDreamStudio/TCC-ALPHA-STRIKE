@@ -2927,7 +2927,7 @@ dialog {
   box-shadow: 3px 3px 2px black;
   transition: 0.5s;
 }
-.btn_Produto_card a{
+.btn_Produto_card a {
   color: white;
 }
 
@@ -3158,7 +3158,7 @@ dialog {
 .modal_2 {
   max-width: 1100px;
   max-height: 550px;
-  transform: translate(11%, 8%);
+  transform: translate(37%, 30%);
 }
 
 .modal_2 > .X {
