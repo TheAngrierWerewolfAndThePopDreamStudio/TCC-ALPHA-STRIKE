@@ -1495,10 +1495,11 @@ a {
 }
 
 .btn_H_3 {
+  color: white;
   height: 45px;
   width: 115px;
   background-color: #fe5001;
-  color: white;
+  color: black;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1510,6 +1511,12 @@ a {
   box-shadow: 3px 3px 2px black;
   transition: 0.5s;
 }
+
+.btn_H_3 a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .btn_H_3:hover {
   color: black;
