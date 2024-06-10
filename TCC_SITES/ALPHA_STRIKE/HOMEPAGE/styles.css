@@ -3850,3 +3850,158 @@ input
     padding: 2px;
     font-size: 16px;
 }
+
+/* *--------------------------------------------------------- CARRINHO ------------------------------------------------------------- * */
+/* ~ Felipe, Matthew e Pedro ~ */
+/* ^ 25/05/2024 ^ */
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #0e1116;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carrinho-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .carrinho-titulo {
+    color: #fe5001;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .carrinho-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #040b14;
+  }
+  
+  .carrinho-tabela th {
+    padding: 10px;
+    border: 1px solid #fe5001;
+  }
+  
+  .carrinho-tabela td {
+    padding: 10px;
+    border: 1px solid #040b14;
+  }
+  
+  .carrinho-tabela th {
+    background-color: #040b14;
+  }
+  
+  .carrinho-tabela .produto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrinho-tabela .produto img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .carrinho-tabela select {
+    padding: 5px;
+    border: 1px solid #555;
+    background-color: #040b14;
+    color: #fff;
+  }
+  
+  .cupom {
+    text-align: right;
+  }
+  
+  .cupom input {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: white;
+    color: black;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+  }
+  
+  .cupom-button {
+    height: 45px;
+    width: 240px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 2px black;
+    transition: 0.5s;
+  }
+  
+  .cupom-button:hover {
+    color: black;
+    background-color: #fe5001;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+  }
+  
+  .carrinho-total {
+    background-color: #040b14;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .carrinho-total h2 {
+    margin-bottom: 20px;
+    color: #fe5001;
+  }
+  
+  .linha-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .linha-total.fim {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    height: 45px;
+    width: 720px;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 2px black;
+    transition: 0.5s;
+  }
+  
+  .checkout-button:hover {
+    color: black;
+    background-color: #fe5001;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+  }
+  
