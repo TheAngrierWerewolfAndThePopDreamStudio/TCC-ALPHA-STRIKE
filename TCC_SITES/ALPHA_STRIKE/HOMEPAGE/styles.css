@@ -3007,8 +3007,7 @@ dialog
 .fechar_modal_Agendamento:hover 
 {
     cursor: pointer;
-    -webkit-filter: drop-shadow(3px 3px 4px #fe5001)
-        drop-shadow(-3px -3px 4px #fe5001);
+    -webkit-filter: drop-shadow(3px 3px 4px #fe5001)drop-shadow(-3px -3px 4px #fe5001);
     filter: drop-shadow(3px 3px 4px #fe5001) drop-shadow(-3px -3px 4px #fe5001);
 }
 
@@ -3386,6 +3385,79 @@ dialog
         width: 100%;
     }
 }
+
+.WARNING_BOX
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.WARNING_IMG
+{
+    width: 60%;
+    -webkit-filter: drop-shadow(2px 2px 4px white)drop-shadow(-2px -2px 4px white);
+    filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+}
+
+.WARNING_IMG_PL
+{
+    margin-top: 10%;
+    margin-bottom: -14%;
+}
+
+.WARNING_IMG_NeB
+{
+    width: 35%;
+    margin-bottom: 4%;
+}
+
+.WARNING_Box_Left,
+.WARNING_18,
+.WARNING_Box_Right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.WARNING_Box_Left
+{
+    margin-top: -10%;
+}
+
+.WARNING_P_L,
+.WARNING_18_P,
+.WARNING_NeB
+{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 1%;
+}
+
+.WARNING_18_Limite
+{
+    color: #fe5001;
+    font-size: 1300%;
+    font-weight: bolder;
+    margin: 1%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    -webkit-filter: drop-shadow(2px 2px 4px white)drop-shadow(-2px -2px 4px white);
+    filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+}
+
 
 /* * BLOG ----------------------------------------------------- INICIAL ----------------------------------------------------------- * */
 /* ~ Diego ~ */
@@ -3854,80 +3926,95 @@ input
 /* *--------------------------------------------------------- CARRINHO ------------------------------------------------------------- * */
 /* ~ Felipe, Matthew e Pedro ~ */
 /* ^ 25/05/2024 ^ */
+/* ^ Modificado - 12/06/2024 ^ */
 
-body {
+body 
+{
     font-family: "Roboto Condensed", sans-serif;
     background-color: #0e1116;
     color: #fff;
     margin: 0;
     padding: 0;
-  }
-  
-  .carrinho-container {
+}
+
+.carrinho-container 
+{
     max-width: 800px;
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px;
-  }
-  .carrinho-titulo {
+}
+
+.carrinho-titulo 
+{
     color: #fe5001;
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .carrinho-tabela {
+}
+
+.carrinho-tabela 
+{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
     background-color: #040b14;
-  }
-  
-  .carrinho-tabela th {
+}
+
+.carrinho-tabela th 
+{
     padding: 10px;
     border: 1px solid #fe5001;
-  }
-  
-  .carrinho-tabela td {
+}
+
+.carrinho-tabela td 
+{
     padding: 10px;
     border: 1px solid #040b14;
-  }
-  
-  .carrinho-tabela th {
+}
+
+.carrinho-tabela th 
+{
     background-color: #040b14;
-  }
-  
-  .carrinho-tabela .produto {
+}
+
+.carrinho-tabela .produto 
+{
     display: flex;
     align-items: center;
-  }
-  
-  .carrinho-tabela .produto img {
+}
+
+.carrinho-tabela .produto img 
+{
     width: 50px;
     height: 50px;
     margin-right: 10px;
-  }
-  
-  .carrinho-tabela select {
+}
+
+.carrinho-tabela select 
+{
     padding: 5px;
     border: 1px solid #555;
     background-color: #040b14;
     color: #fff;
-  }
-  
-  .cupom {
+}
+
+.cupom 
+{
     text-align: right;
-  }
-  
-  .cupom input {
+}
+
+.cupom input 
+{
     padding: 10px;
     border: 1px solid #555;
     background-color: white;
     color: black;
     width: calc(100% - 120px);
     margin-right: 10px;
-  }
-  
-  .cupom-button {
+}
+
+.cupom-button 
+{
     height: 45px;
     width: 240px;
     background-color: #fe5001;
@@ -3944,40 +4031,46 @@ body {
     margin-bottom: 20px;
     box-shadow: 3px 3px 2px black;
     transition: 0.5s;
-  }
-  
-  .cupom-button:hover {
+}
+
+.cupom-button:hover 
+{
     color: black;
     background-color: #fe5001;
     font-weight: bolder;
     font-size: large;
     letter-spacing: 3px;
     filter: drop-shadow(1px 1px 3px black);
-  }
-  
-  .carrinho-total {
+}
+
+.carrinho-total 
+{
     background-color: #040b14;
     padding: 20px;
     margin-bottom: 100px;
-  }
-  
-  .carrinho-total h2 {
+}
+
+.carrinho-total h2 
+{
     margin-bottom: 20px;
     color: #fe5001;
-  }
-  
-  .linha-total {
+}
+
+.linha-total 
+{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-  }
-  
-  .linha-total.fim {
+}
+
+.linha-total.fim 
+{
     font-size: 1.2em;
     font-weight: bold;
-  }
-  
-  .checkout-button {
+}
+
+.checkout-button 
+{
     height: 45px;
     width: 720px;
     background-color: #fe5001;
@@ -3994,14 +4087,14 @@ body {
     margin-bottom: 20px;
     box-shadow: 3px 3px 2px black;
     transition: 0.5s;
-  }
-  
-  .checkout-button:hover {
+}
+
+.checkout-button:hover 
+{
     color: black;
     background-color: #fe5001;
     font-weight: bolder;
     font-size: large;
     letter-spacing: 3px;
     filter: drop-shadow(1px 1px 3px black);
-  }
-  
+}

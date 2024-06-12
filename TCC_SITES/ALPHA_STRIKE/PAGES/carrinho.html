@@ -1,500 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título da janela -->
+        <title>Alpha Strike - Carrinho</title>
     
-    <!-- Título da janela -->
-    <title>Alpha Strike - Carrinho</title>
-    
-    <link
-      rel="shortcut icon"
-      href="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_ICON.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_ICON.png" type="image/x-icon"/>
     
     <!-- Link - Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
     
     <!-- Link - CSS -->
     <link rel="stylesheet" href="../HOMEPAGE/styles.css" />
-  </head>
-  
-  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-  <body>
+    </head>
 
-    <div class="container-fluid">
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-   <!--*  -------------------------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------- *-->
-    <!-- ~ Wanderson ~ -->
-    <!-- ^ 18/04/2024 ^ -->
-    <!-- ^ Modificado: 11/04/2024  ^-->
-    <!-- ^ Atualizado: 11/05/2024  ^-->
-    <!-- TODO 1. Atualizar Links dos Botões -->
-    <!-- ! CUIDADO!! Os links da Navbar são diferentes dependendo da página!! -->>
+    <body>
 
-      <div class="navbar fixed-navbar">
-      <img
-        src="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png"
-        alt="Logo"
-        height="95px"
-        class="logoAS"
-      />
+        <div class="container-fluid">
 
-      <button type="button" class="btn btn-custom col sm-1" id="home">
-        <a href="../HOMEPAGE/index.html">Home</a>
-      </button>
-      <button type="button" class="btn btn-custom col sm-1" id="info">
-        <a href="../PAGES/info.html">Info</a>
-      </button>
-      <!-- ^ 18/04/2024 ^ -->
-      <button type="button" class="btn btn-custom col sm-1" id="blog">
-        <a href="../PAGES/blog.html">Blog</a>
-      </button>
-      <button type="button" class="btn btn-custom col sm-1" id="contato">
-        <a href="../PAGES/contato.html">Contato</a>
-      </button>
-      <!-- ^ 01/05/2024 ^ -->
-      <button type="button" class="btn btn-custom col sm-1" id="eventos">
-        <a class="btn_importante" href="../PAGES/eventos.html">Eventos</a>
-      </button>
-      <!-- ^ 27/04/2024 ^ -->
-      <button type="button" class="btn btn-custom col sm-1" id="loja">
-        <a class="btn_importante" href="../PAGES/loja.html">Loja</a>
-      </button>
-      <button type="button" class="btn btn-custom col sm-1" id="carrinho">
-        <a class="btn_importante" href="./carrinho.html">Carrinho</a>
-      </button>
-      <button type="button" class="btn btn-custom col sm-1" id="entrar">
-        <a href="#">Entrar</a>
-      </button>
-    </div>
+<!--*  -------------------------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------- *-->
+<!-- ~ Wanderson ~ -->
+<!-- ^ 18/04/2024 ^ -->
+<!-- ^ Modificado: 11/04/2024  ^-->
+<!-- ^ Atualizado: 11/05/2024  ^-->
+<!-- TODO 1. Atualizar Links dos Botões -->
+<!-- ! CUIDADO!! Os links da Navbar são diferentes dependendo da página!! -->>
 
-    <!--*  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ *-->
+            <div class="navbar fixed-navbar">
 
-    <!--*  -----------------------------------------------------------------------------------IMAGEM_PADRÃO------------------------------------------------------------------------------------- *-->
+                <img src="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png" alt="Logo" height="95px" class="logoAS"/>
 
-    <img
-      src="../HOMEPAGE/Recursos/Imagens/Group.jpg"
-      alt="img_padrao"
-      class="imagem_padrao"
-    />
-    <h1 class="TITULO_EVENTOS">CARRINHO</h1>
-    <div class="Line_Padrao"></div>
+                <button type="button" class="btn btn-custom col sm-1" id="home"><a href="../HOMEPAGE/index.html">Home</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="info"><a href="../PAGES/info.html">Info</a></button> <!-- ^ 18/04/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="blog"><a href="../PAGES/blog.html">Blog</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="contato"><a href="../PAGES/contato.html">Contato</a></button> <!-- ^ 01/05/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="eventos"><a class="btn_importante" href="../PAGES/eventos.html">Eventos</a></button> <!-- ^ 27/04/2024 ^ -->
+                <button type="button" class="btn btn-custom col sm-1" id="loja"><a class="btn_importante" href="../PAGES/loja.html">Loja</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="carrinho"><a class="btn_importante" href="./carrinho.html">Carrinho</a></button>
+                <button type="button" class="btn btn-custom col sm-1" id="entrar"><a href="#">Entrar</a></button>
 
-    <!--*  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ *-->
-
-    <!--*------------------------------------------------------------- CARRINHO ---------------------------------------------------------------------------------------------------------- *-->
-    <!-- ~ Felipe, Matthew e Pedro ~ -->
-    <!-- ^ 25/05/2024 ^ -->
-
-    <div class="carrinho-container">
-      <table class="carrinho-tabela">
-        <thead>
-          <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Subtotal</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Sniper/sniper-de-airsoft-m40-a5-specna-arms-0-1685203388830.png"
-                alt="Sniper Airsoft M40 SA-202 Core S-Series Tan"
-              />
-              <span>Sniper de Airsoft M40 SA-S02 Core S-Series Tan</span>
-            </td>
-            <td>R$ 1.790,00 – R$ 1.949,00</td>
-            <td>
-              <select>
-                <option value="#">0</option>
-                <!-- ? Futuramente a quantidade disponível de cada arma devera ser de acordo com o disponível em estoque (JavaScript)-->
-              </select>
-            </td>
-            <td>R$ 1.790,00 – R$ 1.949,00</td>
-          </tr>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Shotgun/cyma-cm-356-tactical-shotgun_01.png"
-                alt="Shotgun Airsoft CYMA CM.356 Tactical"
-              />
-              <span>CYMA CM.356 Tactical</span>
-            </td>
-            <td>R$ 443,02 – R$ 472,67</td>
-            <td>
-              <select>
-                <option value="20">0</option>
-              </select>
-            </td>
-            <td>R$ 443,02 – R$ 472,67</td>
-          </tr>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Pistola/GLOCK-17-GEN3.jpg"
-                alt="Pistola Airsoft Glock 17"
-              />
-              <span>Umarex GLOCK 17 Gen3 CO2</span>
-            </td>
-            <td>R$ 1.065,44 – R$ 1279,32</td>
-            <td>
-              <select>
-                <option value="#">0</option>
-              </select>
-            </td>
-            <td>R$ 1.065,44 – R$ 1279,32</td>
-          </tr>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Shotgun/Shotgun-cm.373m-full-metal-cyma.jpg"
-                alt="Shotgun Airsoft CYMA CM.373M M1014"
-              />
-              <span>CYMA CM.373M M1014</span>
-            </td>
-            <td>R$ 445,34 – R$ 722,94</td>
-            <td>
-              <select>
-                <option value="#">0</option>
-              </select>
-            </td>
-            <td>R$ 445,34 – R$ 722,94</td>
-          </tr>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Pistola/Umarex-Hek-USP-.png"
-                alt="Pistola Airsoft Umarex Hek USP"
-              />
-              <span>Umarex H&K USP .45 GBB</span>
-            </td>
-            <td>R$ 874,78 – R$ 945,40</td>
-            <td>
-              <select>
-                <option value="#">0</option>
-              </select>
-            </td>
-            <td>R$ 874,78 – R$ 945,40</td>
-          </tr>
-          <tr>
-            <td class="produto">
-              <img
-                src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Sniper/rifle_de_airsoft_sniper_novritsch_ssg10_airsoft_.jpg"
-                alt="Rifle Airsoft Novritsch ssg10"
-              />
-              <span>Novritsch SSG10 A1</span>
-            </td>
-            <td>R$ 1.250,80 – R$ 1.612,78</td>
-            <td>
-              <select>
-                <option value="#">0</option>
-              </select>
-            </td>
-            <td>R$ 1.250,80 – R$ 1.612,78</td>
-          </tr>
-          <tr>
-            <td colspan="4" class="cupom">
-              <input type="text" placeholder="Código do cupom" />
-              <button class="cupom-button">ADICIONAR CUPOM</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="carrinho-total">
-        <h2>TOTAL DO CARRINHO</h2>
-        <div class="linha-total">
-          <span>SUBTOTAL</span>
-          <span>R$XX.XX</span>
-        </div>
-        <div class="linha-total">
-          <span>ENVIO</span>
-          <span
-            >Envio para Estado X, Cidade X. <a href="#">Mudar endereço</a></span
-          >
-        </div>
-        <div class="linha-total fim">
-          <span>TOTAL</span>
-          <span>R$XX.XX</span>
-        </div>
-        <button class="checkout-button">SEGUIR PARA O CHECKOUT</button>
-      </div>
-    </div>
-
-    <!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
-
-    <!--*  12 ------------------------------------------------------------------------------- Card_Contato --------------------------------------------------------------------------------- *-->
-    <!-- ~ Felipe ~ -->
-    <!-- ^ Modificado e Padronizado - 01/05/2024 ^ -->
-    <!-- TODO 1. Criar email e atualizar com o link -->
-
-    <div class="C_C_Line Contato_Top_line"></div>
-
-    <div class="Card_Contato fluid">
-      <div class="C_C_Box">
-        <div class="C_C_Box_1 Contato_Box_Esq">
-          <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
-
-          <h4 class="C_C_h4">CONTATO</h4>
-          <p class="C_C_p_email">atendimento@alphastrike.com.br</p>
-          <!-- TODO 1. Criar email e atualizar com o link -->
-
-          <p class="C_C_p_telefone">(41)XXXX-XXXX</p>
-        </div>
-
-        <div class="C_C_Box_2 Contato_Box_Cen">
-          <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
-
-          <img
-            src="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png"
-            alt="logo"
-            class="C_C_Logo"
-          />
-        </div>
-
-        <div class="C_C_Box_3 Contato_Box_Dir">
-          <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
-
-          <h4 class="C_C_h4 Contato_CC_h4" id="id_h4_enderecos">ENDEREÇOS</h4>
-          <h5 class="C_C_p_arena_1 Contato_CC_A1">BASE</h5>
-          <p class="C_C_p_endereço Contato_CC_End_1">
-            Rua Padre Dehon, 2XXX - Boqueirão, Curitiba - PR
-          </p>
-          <h5 class="C_C_p_arena_1 Contato_CC_A2">CAMPO</h5>
-          <p class="C_C_p_endereço Contato_CC_End_2">
-            Rua Antônio Escorsin, 3XX - Santa Felicidade, Curitiba - PR
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="C_C_Line Contato_Bottom_line"></div>
-
-    <!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
-
-    <!--*  13 --------------------------------------------------------------------------------- Footer_1 ------------------------------------------------------------------------------------ *-->
-    <!-- ~ Matthew ~ -->
-    <!-- ^ Modificado e Padronizado - 01/05/2024 ^ -->
-
-    <div class="Footer_1">
-      <p class="Footer_1_p Contato_Footer_p">
-        Alpha Strike © 2024. Todos os direitos reservados.
-      </p>
-    </div>
-
-    <!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
-
-    <!--*  ENTRAR --------------------------------------------------------------------- FORMULÁRIO LOGIN/CADASTRO -------------------------------------------------------------------------- *-->
-    <!-- ~ Felipe ~ -->
-    <!-- ~ Wanderson ~ -->
-    <!-- ^ Modificado: 11/05/2024 ^ -->
-
-    <!-- * Formulário de Login * -->
-    <dialog class="modal" id="loginDialog">
-      <img
-        class="X close fechar_modal_login"
-        src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png"
-        alt="X"
-        onclick="fecharModalLogin()"
-      />
-      <header class="F_login">Login</header>
-
-      <form action="#">
-        <!-- * Email * -->
-        <div class="field input-field">
-          <input
-            type="email"
-            required
-            placeholder="Email"
-            class="input"
-            name="email"
-            id="email"
-          />
-        </div>
-        <!-- * Senha * -->
-        <div class="field input-field">
-          <input
-            type="password"
-            required
-            placeholder="Senha"
-            class="password"
-            name="senha"
-            id="senha"
-          />
-          <i class="bx bx-hide eye-icon"></i>
-        </div>
-        <!-- * Esqueceu a senha? * -->
-        <div class="form-link">
-          <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
-        </div>
-        <!-- * Botão: Entrar * -->
-        <div class="field button-field">
-          <button class="btn_F_1">Entrar</button>
-        </div>
-        <!-- * Formulário de cadastro * -->
-        <div class="form-link">
-          <span class="form_text"
-            >Não possui uma conta?
-            <a href="#" class="link signup-link">Inscreva-se</a></span
-          >
-        </div>
-        <!-- * Linha de divisão * -->
-        <div class="line"></div>
-        <!-- * Botão do Google * -->
-        <div class="media-options">
-          <a href="#" class="field google">
-            <img
-              id="logogoogle"
-              src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png"
-              alt="Logo google"
-            />
-            <span class="btn_G_1">Entrar com Google</span>
-          </a>
-        </div>
-      </form>
-    </dialog>
-
-    <!-- * Formulário de Cadastro * -->
-    <dialog class="modal" id="signupDialog">
-      <img
-        class="X close fechar_modal_signup"
-        src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png"
-        alt="X"
-        onclick="fecharModalSignup()"
-      />
-      <header class="F_cadastro">Cadastro</header>
-
-      <form action="#">
-        <!-- * Classe BOX principal (linha) * -->
-        <div class="BIG_BOX_1">
-          <!-- * BOX 1 = coluna * -->
-          <div class="box_1">
-            <!-- * Nome * -->
-            <div class="field input-field">
-              <input
-                type="nome"
-                required
-                placeholder="Nome"
-                class="input"
-                name="nome"
-                id="nome"
-              />
             </div>
-            <!-- * Sobrenome * -->
-            <div class="field input-field">
-              <input
-                type="sobrenome"
-                required
-                placeholder="Sobrenome"
-                class="input"
-                name="sobrenome"
-                id="sobrenome"
-              />
+
+<!--*  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ *-->
+
+<!--*  -----------------------------------------------------------------------------------IMAGEM_PADRÃO------------------------------------------------------------------------------------- *-->
+
+            <img src="../HOMEPAGE/Recursos/Imagens/Group.jpg" alt="img_padrao" class="imagem_padrao"/>
+            <h1 class="TITULO_EVENTOS">CARRINHO</h1>
+            <div class="Line_Padrao"></div>
+
+<!--*  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ *-->
+
+<!--*------------------------------------------------------------- CARRINHO ---------------------------------------------------------------------------------------------------------- *-->
+<!-- ~ Felipe, Matthew e Pedro ~ -->
+<!-- ^ 25/05/2024 ^ -->
+
+            <div class="carrinho-container">
+
+                <table class="carrinho-tabela">
+
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Sniper/sniper-de-airsoft-m40-a5-specna-arms-0-1685203388830.png" alt="Sniper Airsoft M40 SA-202 Core S-Series Tan"/>
+                            <span>Sniper de Airsoft M40 SA-S02 Core S-Series Tan</span>
+                            </td>
+                            <td>R$ 1.790,00 – R$ 1.949,00</td>
+                            <td>
+                            <select>
+                                <option value="#">0</option>
+                                <!-- ? Futuramente a quantidade disponível de cada arma devera ser de acordo com o disponível em estoque (JavaScript)-->
+                            </select>
+                            </td>
+                            <td>R$ 1.790,00 – R$ 1.949,00</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Shotgun/cyma-cm-356-tactical-shotgun_01.png" alt="Shotgun Airsoft CYMA CM.356 Tactical"/>
+                            <span>CYMA CM.356 Tactical</span>
+                            </td>
+                            <td>R$ 443,02 – R$ 472,67</td>
+                            <td>
+                            <select>
+                                <option value="20">0</option>
+                            </select>
+                            </td>
+                            <td>R$ 443,02 – R$ 472,67</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Pistola/GLOCK-17-GEN3.jpg" alt="Pistola Airsoft Glock 17"/>
+                            <span>Umarex GLOCK 17 Gen3 CO2</span>
+                            </td>
+                            <td>R$ 1.065,44 – R$ 1279,32</td>
+                            <td>
+                            <select>
+                                <option value="#">0</option>
+                            </select>
+                            </td>
+                            <td>R$ 1.065,44 – R$ 1279,32</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Shotgun/Shotgun-cm.373m-full-metal-cyma.jpg" alt="Shotgun Airsoft CYMA CM.373M M1014"/>
+                            <span>CYMA CM.373M M1014</span>
+                            </td>
+                            <td>R$ 445,34 – R$ 722,94</td>
+                            <td>
+                            <select>
+                                <option value="#">0</option>
+                            </select>
+                            </td>
+                            <td>R$ 445,34 – R$ 722,94</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Pistola/Umarex-Hek-USP-.png" alt="Pistola Airsoft Umarex Hek USP"/>
+                            <span>Umarex H&K USP .45 GBB</span>
+                            </td>
+                            <td>R$ 874,78 – R$ 945,40</td>
+                            <td>
+                            <select>
+                                <option value="#">0</option>
+                            </select>
+                            </td>
+                            <td>R$ 874,78 – R$ 945,40</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produto">
+                            <img src="../HOMEPAGE/Recursos/Imagens/Loja/Produtos/Sniper/rifle_de_airsoft_sniper_novritsch_ssg10_airsoft_.jpg" alt="Rifle Airsoft Novritsch ssg10"/>
+                            <span>Novritsch SSG10 A1</span>
+                            </td>
+                            <td>R$ 1.250,80 – R$ 1.612,78</td>
+                            <td>
+                            <select>
+                                <option value="#">0</option>
+                            </select>
+                            </td>
+                            <td>R$ 1.250,80 – R$ 1.612,78</td>
+                        </tr>
+
+                    <!--<tr>
+                        <td colspan="4" class="cupom">
+                        <input type="text" placeholder="Código do cupom" />
+                        <button class="cupom-button">ADICIONAR CUPOM</button>
+                        </td>
+                    </tr>-->
+
+                    </tbody>
+
+                </table>
+
+                <div class="carrinho-total">
+
+                    <h2>TOTAL DO CARRINHO</h2>
+                    <div class="linha-total">
+                        <span>SUBTOTAL</span>
+                        <span>R$XX.XX</span>
+                    </div>
+
+                    <div class="linha-total">
+                        <span>ENVIO</span>
+                        <!--<span>Envio para Estado X, Cidade X. <a href="#">Mudar endereço</a></span>-->
+                    </div>
+
+                    <div class="linha-total fim">
+                        <span>TOTAL</span>
+                        <span>R$XX.XX</span>
+                    </div>
+
+                    <button class="checkout-button">SEGUIR PARA O CHECKOUT</button>
+
+                </div>
+
             </div>
-            <!-- * CPF * -->
-            <div class="field input-field">
-              <input
-                type="cpf"
-                required
-                placeholder="CPF"
-                max="11"
-                class="input"
-                name="cpf"
-                id="cpf"
-              />
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  12 ------------------------------------------------------------------------------- Card_Contato --------------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ^ Modificado e Padronizado - 01/05/2024 ^ -->
+<!-- TODO 1. Criar email e atualizar com o link -->
+
+            <div class="C_C_Line Contato_Top_line"></div>
+
+                <div class="Card_Contato fluid">
+
+                    <div class="C_C_Box">
+
+                        <div class="C_C_Box_1 Contato_Box_Esq">
+                        <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                            <h4 class="C_C_h4">CONTATO</h4>
+                            <p class="C_C_p_email">atendimento@alphastrike.com.br</p>
+                            <!-- TODO 1. Criar email e atualizar com o link -->
+                            <p class="C_C_p_telefone">(41)XXXX-XXXX</p>
+
+                        </div>
+
+                        <div class="C_C_Box_2 Contato_Box_Cen">
+                        <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                            <img src="../HOMEPAGE/Recursos/Imagens/Alpha-Strike - LOGOS_LETTERS_MASCOT/Alpha-Strike_LOGO_v2_Black.png" alt="logo" class="C_C_Logo"/>
+
+                        </div>
+
+                        <div class="C_C_Box_3 Contato_Box_Dir">
+                        <!-- ^ Box separadas para controlar o espacamento e alinhamento ^ -->
+
+                            <h4 class="C_C_h4 Contato_CC_h4" id="id_h4_enderecos">ENDEREÇOS</h4>
+                            <h5 class="C_C_p_arena_1 Contato_CC_A1">BASE</h5>
+                            <p class="C_C_p_endereço Contato_CC_End_1">Rua Padre Dehon, 2XXX - Boqueirão, Curitiba - PR</p>
+                            <h5 class="C_C_p_arena_1 Contato_CC_A2">CAMPO</h5>
+                            <p class="C_C_p_endereço Contato_CC_End_2">Rua Antônio Escorsin, 3XX - Santa Felicidade, Curitiba - PR</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            <div class="C_C_Line Contato_Bottom_line"></div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  13 --------------------------------------------------------------------------------- Footer_1 ------------------------------------------------------------------------------------ *-->
+<!-- ~ Matthew ~ -->
+<!-- ^ Modificado e Padronizado - 01/05/2024 ^ -->
+
+            <div class="Footer_1">
+                <p class="Footer_1_p Contato_Footer_p">Alpha Strike © 2024. Todos os direitos reservados.</p>
             </div>
-          </div>
-          <!-- * BOX 2 = coluna * -->
-          <div class="box_2">
-            <!-- * Email * -->
-            <div class="field input-field">
-              <input
-                type="email"
-                required
-                placeholder="Email"
-                class="input"
-                name="email"
-                id="email_1"
-              />
-            </div>
-            <!-- * Senha * -->
-            <div class="field input-field">
-              <input
-                type="password"
-                required
-                placeholder="Crie uma senha"
-                class="password"
-                name="senha"
-                id="senha_1"
-              />
-            </div>
-            <!-- * Confirmação de senha * -->
-            <div class="field input-field">
-              <input
-                type="password"
-                required
-                placeholder="Confirme a senha"
-                class="password"
-                name="senha"
-                id="senha_2"
-              />
-              <i class="bx bx-hide eye-icon"></i>
-            </div>
-          </div>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
+<!--*  ENTRAR --------------------------------------------------------------------- FORMULÁRIO LOGIN/CADASTRO -------------------------------------------------------------------------- *-->
+<!-- ~ Felipe ~ -->
+<!-- ~ Wanderson ~ -->
+<!-- ^ Modificado: 11/05/2024 ^ -->
+
+            <!-- * Formulário de Login * -->
+            <dialog class="modal" id="loginDialog">
+                <img class="X close fechar_modal_login" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalLogin()"/>
+                <header class="F_login">Login</header>
+
+                <form action="#">
+                    <!-- * Email * -->
+                    <div class="field input-field">
+                    <input
+                        type="email"
+                        required
+                        placeholder="Email"
+                        class="input"
+                        name="email"
+                        id="email"
+                    />
+                    </div>
+                    <!-- * Senha * -->
+                    <div class="field input-field">
+                    <input
+                        type="password"
+                        required
+                        placeholder="Senha"
+                        class="password"
+                        name="senha"
+                        id="senha"
+                    />
+                    <i class="bx bx-hide eye-icon"></i>
+                    </div>
+                    <!-- * Esqueceu a senha? * -->
+                    <div class="form-link">
+                    <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                    </div>
+                    <!-- * Botão: Entrar * -->
+                    <div class="field button-field">
+                    <button class="btn_F_1">Entrar</button>
+                    </div>
+                    <!-- * Formulário de cadastro * -->
+                    <div class="form-link">
+                    <span class="form_text"
+                        >Não possui uma conta?
+                        <a href="#" class="link signup-link">Inscreva-se</a></span
+                    >
+                    </div>
+                    <!-- * Linha de divisão * -->
+                    <div class="line"></div>
+                    <!-- * Botão do Google * -->
+                    <div class="media-options">
+                    <a href="#" class="field google">
+                        <img
+                        id="logogoogle"
+                        src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png"
+                        alt="Logo google"
+                        />
+                        <span class="btn_G_1">Entrar com Google</span>
+                    </a>
+                    </div>
+                </form>
+
+            </dialog>
+
+            <!-- * Formulário de Cadastro * -->
+            <dialog class="modal" id="signupDialog">
+                <img class="X close fechar_modal_signup" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalSignup()"/>
+                <header class="F_cadastro">Cadastro</header>
+
+                <form action="#">
+                    <!-- * Classe BOX principal (linha) * -->
+                    <div class="BIG_BOX_1">
+                    <!-- * BOX 1 = coluna * -->
+                    <div class="box_1">
+                        <!-- * Nome * -->
+                        <div class="field input-field">
+                        <input
+                            type="nome"
+                            required
+                            placeholder="Nome"
+                            class="input"
+                            name="nome"
+                            id="nome"
+                        />
+                        </div>
+                        <!-- * Sobrenome * -->
+                        <div class="field input-field">
+                        <input
+                            type="sobrenome"
+                            required
+                            placeholder="Sobrenome"
+                            class="input"
+                            name="sobrenome"
+                            id="sobrenome"
+                        />
+                        </div>
+                        <!-- * CPF * -->
+                        <div class="field input-field">
+                        <input
+                            type="cpf"
+                            required
+                            placeholder="CPF"
+                            max="11"
+                            class="input"
+                            name="cpf"
+                            id="cpf"
+                        />
+                        </div>
+                    </div>
+                    <!-- * BOX 2 = coluna * -->
+                    <div class="box_2">
+                        <!-- * Email * -->
+                        <div class="field input-field">
+                        <input
+                            type="email"
+                            required
+                            placeholder="Email"
+                            class="input"
+                            name="email"
+                            id="email_1"
+                        />
+                        </div>
+                        <!-- * Senha * -->
+                        <div class="field input-field">
+                        <input
+                            type="password"
+                            required
+                            placeholder="Crie uma senha"
+                            class="password"
+                            name="senha"
+                            id="senha_1"
+                        />
+                        </div>
+                        <!-- * Confirmação de senha * -->
+                        <div class="field input-field">
+                        <input
+                            type="password"
+                            required
+                            placeholder="Confirme a senha"
+                            class="password"
+                            name="senha"
+                            id="senha_2"
+                        />
+                        <i class="bx bx-hide eye-icon"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- * Botão: Inscreva-se * -->
+                    <div class="field button-field">
+                    <button class="btn_F_1">Inscreva-se</button>
+                    </div>
+                    <!-- * Formulário de login * -->
+                    <div class="form-link">
+                    <span class="form_text"
+                        >Já possui uma conta?
+                        <a href="#" class="link login-link">Login</a></span
+                    >
+                    </div>
+                    <!-- * Linha de divisão * -->
+                    <div class="line"></div>
+                    <!-- * Botão do Google * -->
+                    <div class="media-options">
+                    <a href="#" class="field google">
+                        <img
+                        id="logogoogle"
+                        src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png"
+                        alt="Logo google"
+                        />
+                        <span class="btn_G_1">Entrar com Google</span>
+                    </a>
+                    </div>
+                </form>
+
+            </dialog>
+
+<!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+
         </div>
-        <!-- * Botão: Inscreva-se * -->
-        <div class="field button-field">
-          <button class="btn_F_1">Inscreva-se</button>
-        </div>
-        <!-- * Formulário de login * -->
-        <div class="form-link">
-          <span class="form_text"
-            >Já possui uma conta?
-            <a href="#" class="link login-link">Login</a></span
-          >
-        </div>
-        <!-- * Linha de divisão * -->
-        <div class="line"></div>
-        <!-- * Botão do Google * -->
-        <div class="media-options">
-          <a href="#" class="field google">
-            <img
-              id="logogoogle"
-              src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png"
-              alt="Logo google"
-            />
-            <span class="btn_G_1">Entrar com Google</span>
-          </a>
-        </div>
-      </form>
-    </dialog>
 
-    <!--*  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- *-->
+        <!-- Link - Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-    </div>
+        <!-- Link - Javascript -->
+        <script src="../HOMEPAGE/formulario.js"></script>
 
-    <!-- Link - Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Link - Javascript -->
-    <script src="../HOMEPAGE/formulario.js"></script>
-
-    <script src="carrinho.js"></script>
-  </body>
+        <script src="carrinho.js"></script>
+    </body>
 
 </html>
