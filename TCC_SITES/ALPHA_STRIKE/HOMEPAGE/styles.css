@@ -1415,6 +1415,14 @@ body
     }
 }
 
+@media screen and (max-width: 1400px) 
+{
+    .Features_2 
+    {
+        height: 115vh;
+    }
+}
+
 .Titulo_F_2 
 {
     margin-top: 30px;
@@ -1708,7 +1716,7 @@ a
 }
 
 
-.btn_H_3:hover 
+.btn_H_3 a:hover 
 {
     color: black;
     font-weight: bolder;
@@ -3016,7 +3024,7 @@ dialog
 /* ^ 27/04/2024 ^ */
 /* ^ Modificado: 12/05/2024 ^ */
 
-.modal_2 
+.modal_2_E
 {
     background: #0e1116;
     justify-content: center;
@@ -3029,12 +3037,12 @@ dialog
 }
 
 /* Estilo para esconder o modal */
-.modal_2[open] 
+.modal_2_E[open] 
 {
     display: block;
 }
 
-.modal_2::backdrop 
+.modal_2_E::backdrop 
 {
     background-color: rgba(0, 0, 0, 65%);
 }
@@ -3186,6 +3194,21 @@ dialog
     width: 50%;
     padding: 1%;
     margin-right: 12%;
+}
+
+.F_A_A_B,
+.F_A_A_C
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin: 2%;
 }
 
 /* * LOJA --------------------------------------------- PRODUTOS ------------------------------------------------------ * */
