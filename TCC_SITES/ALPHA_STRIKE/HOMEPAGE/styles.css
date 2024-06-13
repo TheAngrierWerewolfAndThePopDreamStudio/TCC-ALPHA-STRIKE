@@ -658,12 +658,14 @@ body
 
 .Seta_Avançar_C2 
 {
-    margin-left: 600px;
+    margin-left: 900px;
 }
+
 
 .Seta_Voltar_C2 
 {
     margin-left: 30px;
+    transform: translateY(30px);
 }
 
 .btn_C2_Setas:hover 
@@ -1394,6 +1396,7 @@ body
     padding: 0;
     margin-bottom: 50px;
     width: 100vw;
+    height: 200vh;
     background-color: #262626;
     display: flex;
     flex-direction: column;
@@ -1404,7 +1407,7 @@ body
 {
     .Features_2 
     {
-        height: 60vh;
+        height: 100vh;
         display: block;
         align-items: center;
         align-content: center;
@@ -1547,6 +1550,44 @@ a
     justify-content: flex-end;
 }
 
+.btn_Produto_F_card
+{
+    height: 45px;
+    width: 100%;
+    background-color: #fe5001;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 80%;
+    box-shadow: 3px 3px 2px black;
+    transition: 0.5s;
+}
+
+.btn_Produto_F_card:hover
+{
+    background-color: #fe5001;
+}
+
+#link_card_P_F
+{
+    color:white;
+}
+
+#link_card_P_F:hover
+{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 3px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
 /* * 11 ---------------------------------------------------- Hero_3 ----------------------------------------------------- * */
 /* ~ Matthew ~ */
 /* ^ Modificado e Padronizado - 10/04/2024 ^ */
@@ -1560,7 +1601,7 @@ a
     z-index: 1;
     position: relative;
     align-self: center;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 5%;
     align-items: center;
     align-content: center;
@@ -3260,7 +3301,7 @@ dialog
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 80%;
     box-shadow: 3px 3px 2px black;
     transition: 0.5s;
 }
