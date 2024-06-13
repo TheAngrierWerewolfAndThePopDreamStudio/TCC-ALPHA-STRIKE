@@ -24,3 +24,13 @@ function comprarUSP() {
 function comprarSSG10() {
   alert("Novritsch SSG10 A1 adicionada ao carrinho!");
 }
+
+function comprarM16A4() {
+  alert("M16A4 adicionada ao carrinho!");
+}
+function comprarAK47() {
+  alert("AK47 adicionada ao carrinho!");
+}
+function comprarBBTRACER() {
+  alert("Bb_tracer adicionada ao carrinho!");
+}
