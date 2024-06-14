@@ -32,5 +32,8 @@ function comprarAK47() {
   alert("AK47 adicionada ao carrinho!");
 }
 function comprarBBTRACER() {
-  alert("Bb_tracer adicionada ao carrinho!");
+  alert("Balas bb_tracer adicionada ao carrinho!");
+}
+function comprarBB(){
+  alert("Balas bb's adicionada ao carrinho!");
 }
