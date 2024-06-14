@@ -35,5 +35,5 @@ function comprarBBTRACER() {
   alert("Balas bb_tracer adicionada ao carrinho!");
 }
 function comprarBB(){
-  alert("Balas bb's adicionada ao carrinho!");
+  alert("Balas bb's rossi adicionada ao carrinho!");
 }
