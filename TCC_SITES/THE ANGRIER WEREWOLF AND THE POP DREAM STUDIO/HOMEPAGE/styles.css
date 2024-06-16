@@ -1507,8 +1507,21 @@ ol
     font-family: "Verdana", sans-serif;
 }
 
-/* * DOCUMENTAÇÃO -------------------------------------------------- WEB_DESIGN_6 -------------------------------------------------- * */
+/* * DOCUMENTAÇÃO -------------------------------------------------- WEB_DEVELOPMENT_3 -------------------------------------------------- * */
 /* * Seção: Projeto Integrado - 2 * */
 /* ~ Wanderson ~ */
-/* ^ 15/06/2024 ^ */
+/* ^ 16/06/2024 ^ */
 
+.diagrama_box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.diagrama
+{
+    width: 75%;
+    box-shadow: 1px 1px 20px 0 #009ff0;
+}
