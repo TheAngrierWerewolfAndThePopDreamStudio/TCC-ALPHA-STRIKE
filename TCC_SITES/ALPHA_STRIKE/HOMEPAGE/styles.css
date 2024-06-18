@@ -302,6 +302,14 @@ body
     filter: drop-shadow(2px 2px 2px black);
 }
 
+.btn_C1_1_2,
+.btn_C1_1_2 a
+{
+    transform: translateY(18px);
+    -webkit-filter: drop-shadow(2px 2px 3px black)drop-shadow(-2px -2px 3px black); /* ! Gambiarra para contornar o png com brilho ! */
+    filter: drop-shadow(2px 2px 3px black) drop-shadow(-2px -2px 3px black);
+}
+
 .btn_C1:hover,
 .btn_C1 a:hover 
 {
@@ -1821,8 +1829,7 @@ a
     margin-right: 20%;
     margin-left: 10%;
     object-fit: cover;
-    -webkit-filter: drop-shadow(2px 2px 3px #fe5001)
-        drop-shadow(-2px -2px 3px #fe5001); /* ! Gambiarra para contornar o png com brilho ! */
+    -webkit-filter: drop-shadow(2px 2px 3px #fe5001)drop-shadow(-2px -2px 3px #fe5001); /* ! Gambiarra para contornar o png com brilho ! */
     filter: drop-shadow(2px 2px 3px #fe5001) drop-shadow(-2px -2px 3px #fe5001); /* ^ 08/04/2024 ^ */
 }
 

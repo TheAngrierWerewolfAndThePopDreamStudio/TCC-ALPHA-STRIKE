@@ -112,6 +112,8 @@ ol
     z-index: -2;
 }
 
+
+
 .stars 
 {
     z-index: -2;
@@ -199,6 +201,89 @@ ol
     height: 2742%;   /* ajustar conforme o tamanho da página*/
     background: url("./RECURSOS/Imagens/Background/stars_big.png");
 }
+
+.stars_background_WDV_2
+{
+    position: absolute;
+    width: 100vw;
+    height: 1370%; /* ajustar conforme o tamanho da página*/
+    background: radial-gradient(
+    ellipse at bottom,
+    rgb(54, 106, 138),
+    rgb(9, 9, 9)
+    );
+    z-index: -2;
+}
+
+.layer_4
+{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 1370%;   /* ajustar conforme o tamanho da página*/
+    background: url("./RECURSOS/Imagens/Background/stars_big.png");
+}
+
+/* ^ Arrumar / INDEX ^ */
+/*? Testar 1800px ?*/
+/*? Alterar porcentagem ?*/
+@media (min-width:1600px)
+{
+    .stars_background 
+    {
+        height: 1200%;
+    } 
+    .layer 
+    {
+        height: 1200%;
+    }
+}
+
+/* ^ Arrumar / Doc Integrado ^ */
+/*? Testar 1800px ?*/
+/*? Alterar porcentagem ?*/
+@media (min-width:1600px)
+{
+    .stars_background_DI_2 
+    {
+        height: 1200%;
+    } 
+    .layer_S_2 
+    {
+        height: 1200%;
+    }
+}
+
+/* ^ Arrumar / Web Design ^ */
+/*? Testar 1800px ?*/
+/*? Alterar porcentagem ?*/
+@media (min-width:1600px)
+{
+    .stars_background_WDS_2 
+    {
+        height: 1200%;
+    } 
+    .layer_3 
+    {
+        height: 1200%;
+    }
+}
+
+/* ^ Arrumar / Web Development ^ */
+/*? Testar 1800px ?*/
+/*? Alterar porcentagem ?*/
+@media (min-width:1600px)
+{
+    .stars_background_WDV_2 
+    {
+        height: 1200%;
+    } 
+    .layer_4
+    {
+        height: 1200%;
+    }
+}
+
 
 /* * -------------------------------------------------- HEADER -------------------------------------------------- * */
 /* ~ Wanderson ~ */
@@ -665,7 +750,8 @@ ol
     display: flex;
     flex-direction: column;
     width: 10px;
-    height: 1072px;
+    height: 1245px;
+    margin-top: 5px;
     background-color: #009ff0;
     border-radius: 12px;
     justify-content: center;
@@ -674,6 +760,14 @@ ol
     -webkit-filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
     filter: drop-shadow(1px 1px 2px #009ff0) drop-shadow(-1px -1px 2px #009ff0);
     z-index: 12;
+}
+
+@media (max-width: 1400px)
+{
+    .roadmap_vertical_line
+    {
+        height: 1070px;
+    }
 }
 
 .roadmap_BIG_BOX 
@@ -1027,13 +1121,13 @@ ol
 {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    width: 90%;
+    width: 86%;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
     margin: 4%;
+    margin-right: 6%;
     margin-top: -5%;
     background: rgba(0, 0, 0, 0.15); /* Branco */
     box-shadow: 1px 1px 20px 0 #009ff0;
@@ -1041,44 +1135,46 @@ ol
     -webkit-backdrop-filter: blur( 4.5px );
     z-index: 10;
     border-radius: 12px;
+    padding: 2%;
 }
 
 .portfolio_BIG_BOX
 {
     display: flex;
     flex-direction: row;
-    margin: 0;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-    margin: 6%;
+    margin: 4%;
     margin-top:-2%;
     margin-bottom: 1%;
-    padding: 4%;
+    object-fit: cover;
+}
+
+.port_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 32%;
+    margin: 2.5%;
     object-fit: cover;
 }
 
 .portfolio_1
 {
-    width: 43%;
-    margin-top: 3%;
+    margin-top: 13%;
+    width: 410px;
 }
 
-.portfolio_2
-{
-    width: 40%;
-}
-
+.portfolio_2,
 .portfolio_3
 {
-    width: 38%;
-}
-
-.port_img
-{
-    margin-bottom: 1%;
+    width: 380px;
 }
 
 .port_img:hover

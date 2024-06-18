@@ -93,7 +93,7 @@
                 <div class="Blog_Artigo_Card BAC_3">
                     <a class="Blog_Artigo_link" href="../PAGES/Artigos/principais_modelos_de _simulacros.html"><h2 class="BA_Titulo">PRINCIPAIS MODELOS DE SIMULACROS</h2></a>
                         <a class="Blog_Artigo_link" href="../PAGES/Artigos/principais_modelos_de _simulacros.html"><img class="BA_Imagem" 
-                            src="../HOMEPAGE/Recursos/Imagens/Blog/Inicial/principais_modelos.webp" alt=""></a>
+                            src="../HOMEPAGE/Recursos/Imagens/Blog/Inicial/principais_modelos.jpg" alt=""></a>
                 </div>
 
 
@@ -101,8 +101,8 @@
                 <div class="Blog_Video_Card BVC_1">
                     <a class="Blog_Artigo_link" href="#"><h2 class="BA_Titulo">PARTIDA DE AIRSOFT</h2></a>
                     <iframe 
-                        width="850"
-                        height="500z"
+                        width="800"
+                        height="500"
                         src="https://www.youtube.com/watch?v=rA6-bfevIOU" 
                         title="YouTube video player" 
                         frameborder="0"
@@ -139,12 +139,12 @@
                     <h2 class="BA_Titulo_Categorias">CATEGORIAS</h2>
                     
                     <ul class="BA_Lista_categorias">
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="./Artigos/como_escolher_a_primeira_arma_de_airsoft.html">Primeiro simulacro</a></li>
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="tipos_basicos_de_simulacros.html">Tipos</a></li>
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="./Artigos/principais_modelos_de _simulacros.html">Modelos</a></li>
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="avisos.html">Avisos</a></li>
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="partida_de_airsoft.html">Partidas</a></li>
-                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="fotografia_airsoft.html">Fotografia</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="../PAGES/Artigos/como_escolher_a_primeira_arma_de_airsoft.html">Primeiro simulacro</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="../PAGES/Artigos/tipos_basicos_de_simulacros.html">Tipos</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="../PAGES/Artigos/principais_modelos_de _simulacros.html">Modelos</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="#">Avisos</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="#">Partidas</a></li>
+                        <li class="BA_Categoria"><a class="BA_Link_Categoria" href="#">Fotografia</a></li>
                     </ul>
 
                 </div>
@@ -212,36 +212,36 @@
 <!-- ~ Wanderson ~ -->
 <!-- ^ Modificado: 11/05/2024 ^ -->
 
-            <!-- * Formulário de Login * -->
+            <!-- Formulário de Login -->
             <dialog class="modal" id="loginDialog">
                 <img class="X close fechar_modal_login" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalLogin()">
                 <header class="F_login">Login</header>
 
-                <form action="#">
-                    <!-- * Email * -->
+                <form action="#" autocomplete="off">
+                    <!-- Email -->
                     <div class="field input-field">
                         <input type="email" required placeholder="Email" class="input" name="email" id="email">
                     </div>
-                    <!-- * Senha * -->
+                    <!-- Senha -->
                     <div class="field input-field">
                         <input type="password" required placeholder="Senha" class="password" name="senha" id="senha">
-                        <i class="bx bx-hide eye-icon"></i>
+                        <i class="bi bi-eye-fill eye-icon" id="btn-senha-login" onclick="mostrarSenhaLogin()"></i>
                     </div>
-                    <!-- * Esqueceu a senha? * -->
+                    <!-- Esqueceu a senha? -->
                     <div class="form-link">
                         <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
                     </div>
-                    <!-- * Botão: Entrar * -->
+                    <!-- Botão: Entrar -->
                     <div class="field button-field">
                         <button class="btn_F_1">Entrar</button>
                     </div>
-                    <!-- * Formulário de cadastro * -->
+                    <!-- Formulário de cadastro -->
                     <div class="form-link">
                         <span class="form_text">Não possui uma conta? <a href="#" class="link signup-link">Inscreva-se</a></span>
                     </div>
-                    <!-- * Linha de divisão * -->
+                    <!--  Linha de divisão  -->
                     <div class="line"></div>
-                    <!-- * Botão do Google * -->
+                    <!-- Botão do Google -->
                     <div class="media-options">
                         <a href="#" class="field google">
                             <img id="logogoogle" src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png" alt="Logo google">
@@ -253,68 +253,121 @@
 
             </dialog>
 
-            <!-- * Formulário de Cadastro * -->
-            <dialog class="modal" id="signupDialog">
+            <!-- Formulário de Cadastro -->
+            <dialog class="modal modal_2" id="signupDialog">
                 <img class="X close fechar_modal_signup" src="../HOMEPAGE/Recursos/Imagens/Formularios_Icones/crossed_white.png" alt="X" onclick="fecharModalSignup()">
                 <header class="F_cadastro">Cadastro</header>
 
-                <form action="#">
-                    <!-- * Classe BOX principal (linha) * -->
-                    <div class="BIG_BOX_1">
-                        <!-- * BOX 1 = coluna * -->
-                        <div class="box_1">
-                            <!-- * Nome * -->
-                            <div class="field input-field">
-                                <input type="nome" required placeholder="Nome" class="input" name="nome" id="nome">
-                            </div>
-                            <!-- * Sobrenome * -->
-                            <div class="field input-field">
-                                <input type="sobrenome" required placeholder="Sobrenome" class="input" name="sobrenome" id="sobrenome">
-                            </div>
-                            <!-- * CPF * -->
-                            <div class="field input-field">
-                                <input type="cpf" required placeholder="CPF" max="11" class="input" name="cpf" id="cpf">
-                            </div>
+                <div class="BIG_BOX_form_cad">
+                    
 
-                        </div>
-                        <!-- * BOX 2 = coluna * -->
-                        <div class="box_2">
-                            <!-- * Email * -->
-                            <div class="field input-field">
-                                <input type="email" required placeholder="Email" class="input" name="email" id="email_1">
-                            </div>
-                            <!-- * Senha * -->
-                            <div class="field input-field">
-                                <input type="password" required placeholder="Crie uma senha" class="password" name="senha" id="senha_1">
-                            </div>
-                            <!-- * Confirmação de senha * -->
-                            <div class="field input-field">
-                                <input type="password" required placeholder="Confirme a senha" class="password" name="senha" id="senha_2">
-                                <i class="bx bx-hide eye-icon"></i>
-                            </div>
+                    <!--*  SECURITY_LAYER - NÍVEL_1 *-->
+                    <!-- ~ Wanderson ~ -->
+                    <!-- ^ Modificado: 23/05/2024 ^ -->
+
+                    <div class="box_left">
+
+                        <div class="modal_SLN_1_2" id="Recomendations">
+
+                            <p class="SLN_1_p_1">Recomendações</p>
+                            <ul class="SLN_1_ul">
+                                <li class="SLN_1_li"><span class="laranja_2">Senha longa:</span> <br>de preferência uma frase.</li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Complexa:</span> <br>que tenha sentido apenas para você. </li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Prática:</span> <br>fácil de lembrar.</li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Impessoal:</span> <br>não use datas ou dados pessoais. </li><br>
+                                <li class="SLN_1_li"><span class="laranja_2">Secreta:</span> <br>nunca compartilhe.</li>
+                            </ul>
 
                         </div>
 
                     </div>
-                    <!-- * Botão: Inscreva-se * -->
-                    <div class="field button-field">
-                        <button class="btn_F_1">Inscreva-se</button>
-                    </div>
-                    <!-- * Formulário de login * -->
-                    <div class="form-link">
-                        <span class="form_text">Já possui uma conta? <a href="#" class="link login-link">Login</a></span>
-                    </div>
-                    <!-- * Linha de divisão * -->
-                    <div class="line"></div>
-                    <!-- * Botão do Google * -->
-                    <div class="media-options">
-                        <a href="#" class="field google">
-                            <img id="logogoogle" src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png" alt="Logo google">
-                            <span class="btn_G_1">Entrar com Google</span>
-                        </a>
+
+                    <form class="box_center" action="#" autocomplete="off">
+                        <!-- Classe BOX principal (linha) -->
+                        <div class="BIG_BOX_1">
+                            <!-- BOX 1 = coluna -->
+                            <div class="box_1">
+                                <!-- Nome -->
+                                <div class="field input-field">
+                                    <input type="nome" required placeholder="Nome" class="input" name="nome" id="nome">
+                                </div>
+                                <!-- Sobrenome -->
+                                <div class="field input-field">
+                                    <input type="sobrenome" required placeholder="Sobrenome" class="input" name="sobrenome" id="sobrenome">
+                                </div>
+                                <!-- CPF -->
+                                <div class="field input-field">
+                                    <input type="cpf" required placeholder="CPF" max="11" class="input" name="cpf" id="cpf">
+                                </div>
+
+                            </div>
+                            <!-- BOX 2 = coluna -->
+                            <div class="box_2">
+                                <!-- Email -->
+                                <div class="field input-field">
+                                    <input type="email" required placeholder="Email" class="input" name="email" id="email_1">
+                                </div>
+                                <!-- Senha -->
+                                <div class="field input-field">
+                                    <input type="password" required placeholder="Crie uma senha" class="password" name="senha" id="senha_1">
+                                </div>
+                                <!-- Confirmação de senha -->
+                                <div class="field input-field">
+                                    <input type="password" required placeholder="Confirme a senha" class="password" name="senha" id="senha_2">
+                                    <i class="bi bi-eye-fill eye-icon" id="bt-senha-cadastro" onclick="mostrarSenhaCadastro()"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Botão: Inscreva-se -->
+                        <div class="field button-field">
+                            <button class="btn_F_1">Inscreva-se</button>
+                        </div>
+                        <!-- Formulário de login -->
+                        <div class="form-link">
+                            <span class="form_text">Já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                        </div>
+                        <!-- Linha de divisão -->
+                        <div class="line"></div>
+                        <!-- Botão do Google -->
+                        <div class="media-options">
+                            <a href="#" class="field google">
+                                <img id="logogoogle" src="../HOMEPAGE/Recursos/Imagens/Login_Cadastro_Icones/google_icon.png" alt="Logo google">
+                                <span class="btn_G_1">Entrar com Google</span>
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <!--*  SECURITY_LAYER - NÍVEL_1 *-->
+                    <!-- ~ Wanderson ~ -->
+                    <!-- ^ Modificado: 23/05/2024 ^ -->
+
+                    <div class="box_right">
+
+                        <div class="modal_SLN_1_1" id="Password_Validation">
+
+                            <p class="SLN_1_p_1">A senha deve conter:</p><br>
+                            <ul class="SLN_1_ul SLN_1_ul_val">
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 20 caracteres.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 letra minúscula.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 letra maiúscula.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 número.</li><br>
+                                <li class="SLN_1_li SLN_1_li_val">Pelo menos 1 caractere especial.</li>
+                            </ul>
+
+                            <p class="val_line val_line_1">Incrível</p>
+                            <p class="val_line val_line_2">Muito Forte</p>
+                            <p class="val_line val_line_3">Forte</p>
+                            <p class="val_line val_line_4">Fraca</p>
+                            <p class="val_line val_line_5">Muito Fraca</p>
+
+                        </div>
+
                     </div>
 
-                </form>
+                </div>
 
             </dialog>
 
