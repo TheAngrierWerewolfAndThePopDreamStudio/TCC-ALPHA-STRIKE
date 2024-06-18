@@ -231,11 +231,27 @@ ol
 {
     .stars_background 
     {
-        height: 1200%;
+        height: 1187%;
     } 
     .layer 
     {
-        height: 1200%;
+        height: 1187%;
+    }
+}
+
+@media (max-width:1400px)
+{
+    .stars_background 
+    {
+        height: 1395%;
+    } 
+    .layer 
+    {
+        height: 1395%;
+    }
+    .moon
+    {
+        margin-top: 52%;
     }
 }
 
@@ -246,11 +262,11 @@ ol
 {
     .stars_background_DI_2 
     {
-        height: 1200%;
+        height: 860%;
     } 
     .layer_S_2 
     {
-        height: 1200%;
+        height: 860%;
     }
 }
 
@@ -261,11 +277,11 @@ ol
 {
     .stars_background_WDS_2 
     {
-        height: 1200%;
+        height: 2092%;
     } 
     .layer_3 
     {
-        height: 1200%;
+        height: 2092%;
     }
 }
 
@@ -276,11 +292,11 @@ ol
 {
     .stars_background_WDV_2 
     {
-        height: 1200%;
+        height: 943%;
     } 
     .layer_4
     {
-        height: 1200%;
+        height: 943%;
     }
 }
 
@@ -1161,7 +1177,7 @@ ol
     align-items: center;
     align-content: center;
     width: 32%;
-    margin: 2.5%;
+    margin: 4%;
     object-fit: cover;
 }
 
@@ -1346,8 +1362,8 @@ ol
 {
     z-index: -2;
     width: 100%;
-    margin-top: -45%;
-    object-fit: cover;
+    margin-top: -44.4%;
+    object-fit: contain;
     filter: drop-shadow(5px 5px 30px white) drop-shadow(-5px -5px 30px white);
 }
 

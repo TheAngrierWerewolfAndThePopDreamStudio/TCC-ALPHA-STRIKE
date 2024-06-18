@@ -305,7 +305,8 @@ body
 .btn_C1_1_2,
 .btn_C1_1_2 a
 {
-    transform: translateY(18px);
+    margin-left: -3%;
+    transform: translateY(10px);
     -webkit-filter: drop-shadow(2px 2px 3px black)drop-shadow(-2px -2px 3px black); /* ! Gambiarra para contornar o png com brilho ! */
     filter: drop-shadow(2px 2px 3px black) drop-shadow(-2px -2px 3px black);
 }
@@ -2819,15 +2820,13 @@ dialog
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1%;
-    padding: 3%;
     width: 50%;
     object-fit: cover;
 }
 
 .sobre_imagem 
 {
-    width: 100%;
+    width: 104.2%;
     object-fit: cover;
 }
 
