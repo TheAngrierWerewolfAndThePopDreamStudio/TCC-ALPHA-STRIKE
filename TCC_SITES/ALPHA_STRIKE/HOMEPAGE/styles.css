@@ -302,15 +302,6 @@ body
     filter: drop-shadow(2px 2px 2px black);
 }
 
-.btn_C1_1_2,
-.btn_C1_1_2 a
-{
-    margin-left: -3%;
-    transform: translateY(10px);
-    -webkit-filter: drop-shadow(2px 2px 3px black)drop-shadow(-2px -2px 3px black); /* ! Gambiarra para contornar o png com brilho ! */
-    filter: drop-shadow(2px 2px 3px black) drop-shadow(-2px -2px 3px black);
-}
-
 .btn_C1:hover,
 .btn_C1 a:hover 
 {

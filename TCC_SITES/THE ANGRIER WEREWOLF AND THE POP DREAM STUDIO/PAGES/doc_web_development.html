@@ -84,8 +84,6 @@
 <!-- ^ 10/05/2024 ^ -->
 <!-- ^ Modificado: 12/05/2024 ^ -->
 
-            <h2><span class="span_laranja">TO DO: Linkar todas as seções!</span></h2>
-
             <section class="docs" id="DOCS">
 
                 <h1 class="docs_titulo">DOCUMENTAÇÃO</h1>
@@ -305,17 +303,61 @@
 
 <!--* -------------------------------------------------------------------------------- WEB_DEVELOPMENT_4 ------------------------------------------------------------------------------  *-->
 <!-- ~ Wanderson ~ -->
-<!-- ^ 16/06/2024 ^ -->
-
-<!-- TODO: COMPLETAR -->
+<!-- ^ 19/06/2024 ^ -->
 
             <section class="box_padrao_background web_development_4" id="W_DV_4">
 
                 <h2 class="hero_7_titulo">Banco de Dados e Estrutura de Dados</h2>
 
+                <h3 class="sub_titulo">Fluxograma</h3>
+
+                <p>&emsp;Este fluxograma representa o fluxo de funcionamento do site, abrangendo desde o início do acesso até a administração e backup dos dados.</p>
+
+                <div class="diagrama_box">
+                    <img class="fluxograma" src="../HOMEPAGE/RECURSOS/Imagens/Fotos/Fluxograma_Alpha_Strike_BD_w.png">
+                </div>
+
                 <h2><span class="span_laranja">TO DO: Esquema do Banco de Dados</span></h2>
 
-                <h2><span class="span_laranja">TO DO: Estratégia de Armazenamento e Recuperação de Dados</span></h2>
+                <h3 class="sub_titulo">Estratégia de Armazenamento e Recuperação de Dados</h3>
+
+                <p>&emsp;A estratégia de armazenamento e recuperação de dados do site é projetada para garantir a segurança, integridade e disponibilidade das 
+                    informações essenciais. Aqui estão os principais pontos da nossa abordagem:</p>
+
+                <ol class="lista_padrao_2">
+                    <li class="lista_texto_padrao">Backups Incrementais e Completos</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao"><span class="span_azul">Backups Incrementais:</span> Todos os dados são copiados e armazenados imediatamente 
+                                após cada alteração realizada por usuários ou administradores. Isso inclui modificações em dados pessoais dos usuários, 
+                                detalhes de produtos e agendamentos. Esses backups incrementais garantem que versões específicas dos dados possam ser recuperadas, se necessário.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul">Backup Completo Semanal:</span> Além dos backups incrementais, um backup completo 
+                                de todos os dados do site é realizado semanalmente. Esse backup abrange todo o banco de dados, 
+                                assegurando uma camada adicional de proteção e a capacidade de restaurar o site a um estado recente em caso de falhas ou emergências.</li>
+                        </ul><br>
+
+                    <li class="lista_texto_padrao">Procedimentos de Recuperação</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Estabeleceremos procedimentos claros e documentados para a recuperação de dados conforme necessário. 
+                                Em caso de perda de dados devido a falhas técnicas, ataques cibernéticos ou outros incidentes, nossa equipe fará um plano de ação 
+                                para restaurar os dados a partir dos backups mais recentes disponíveis.</li>
+                            <li class="lista_texto_padrao">A recuperação de dados pode incluir a restauração de backups completos ou incrementais, 
+                                dependendo da natureza e extensão do incidente. Esses procedimentos devem ser periodicamente revisados e testados para garantir sua 
+                                eficácia e a capacidade de resposta rápida diante de crises.</li>
+                        </ul><br>
+
+                    <li class="lista_texto_padrao">Segurança e Integridade dos Dados</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Todos os backups deverão ser armazenados de forma segura em locais específicos, protegidos por medidas 
+                                de segurança cibernética. Isso inclui criptografia de dados, acesso restrito baseado em permissões e monitoramento contínuo para 
+                                detectar e mitigar potenciais vulnerabilidades.</li>
+                            <li class="lista_texto_padrao">A integridade dos backups deve ser verificada regularmente para garantir que todas as cópias estejam completas 
+                                e livres de corrupção, proporcionando confiança na capacidade de restaurar dados precisos e completos em momentos críticos.</li>
+                        </ul>
+                </ol>
+
+                <p>&emsp;Essa abordagem para armazenamento e recuperação de dados não apenas protege informações sensíveis dos usuários e operações essenciais do site, 
+                    mas também assegura que possa ser mantida a continuidade dos serviços com o mínimo de interrupção. A constante avaliação e aprimoramento dos 
+                    processos garantem que estamos preparados para enfrentar desafios futuros e proteger os interesses de todos os envolvidos com o site.</p>
 
             </section>
 
@@ -372,17 +414,93 @@
 
 <!--* -------------------------------------------------------------------------------- WEB_DEVELOPMENT_6 ------------------------------------------------------------------------------  *-->
 <!-- ~ Wanderson ~ -->
-<!-- ^ 16/06/2024 ^ -->
-
-<!-- TODO: COMPLETAR -->>
+<!-- ^ 19/06/2024 ^ -->
 
             <section class="box_padrao_background web_development_6" id="W_DV_6">
 
                 <h2 class="hero_7_titulo">Segurança</h2>
 
-                <h2><span class="span_laranja">TO DO: Medidas de Segurança Implementadas</span></h2>
+                <h3 class="sub_titulo">Medidas de Segurança Implementadas</h3>
 
-                <h2><span class="span_laranja">TO DO: Políticas de Segurança</span></h2>
+                <p>&emsp; Para garantir a proteção e integridade dos dados armazenados em nosso site, implementamos diversas medidas de segurança. 
+                    Entre essas medidas, destacam-se:</p>
+
+                <ol class="lista_padrao_2">
+                    <li class="lista_texto_padrao">Requisitos de Senha:</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao"><span class="span_azul'">Mínimo de 20 caracteres:</span> As senhas devem ter pelo menos 20 caracteres, 
+                                proporcionando uma camada adicional de segurança contra ataques de força bruta.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Pelo menos 1 letra maiúscula:</span> Incluindo letras maiúsculas, aumentamos 
+                                a complexidade da senha.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Pelo menos 1 letra minúscula:</span> A inclusão de letras minúsculas é 
+                                fundamental para criar senhas mais seguras.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Pelo menos 1 número:</span> Números aumentam a variabilidade e segurança das senhas.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Pelo menos 1 caractere especial:</span> Caractere especial adiciona complexidade 
+                                adicional às senhas, tornando-as mais difíceis de quebrar.</li>
+                        </ul><br>
+
+                    <li class="lista_texto_padrao">Recomendações de Senha:</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao"><span class="span_azul'">Senha longa:</span> Recomendamos o uso de frases longas, que são mais seguras e 
+                                ainda assim fáceis de lembrar.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Complexa:</span> As senhas devem ser significativas apenas para o usuário, 
+                                dificultando a adivinhação.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Prática:</span> A senha deve ser fácil de lembrar para o usuário.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Impessoal:</span> Evitar o uso de datas ou dados pessoais, que podem ser facilmente 
+                                descobertos.</li>
+                            <li class="lista_texto_padrao"><span class="span_azul'">Secreta:</span> Nunca compartilhar senhas com terceiros.</li>
+                        </ul><br>
+
+
+                    <li class="lista_texto_padrao">Criptografia de Senhas:</li><br>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao"><span class="span_azul'">Salt e Hash:</span> Utilizamos um salt exclusivo para cada senha e aplicamos a 
+                                função de hash SHA-256 para criptografar as senhas antes de armazená-las no banco de dados. Isso garante que as senhas sejam seguras 
+                                mesmo se o banco de dados for comprometido.<></li>
+                        </ul><br>
+                </ol>
+
+                <h3 class="sub_titulo">Medidas de Segurança Implementadas</h3>
+
+                <p>&emsp; Nossa política de segurança abrange todas as áreas críticas para proteger as informações do usuário e os dados sensíveis armazenados no 
+                    sistema:</p>
+
+                <ol class="lista_padrao_2">
+                    <li class="lista_texto_padrao">Autenticação Segura:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Todos os usuários são autenticados usando métodos que verificam as credenciais de login contra 
+                                os dados criptografados armazenados no banco de dados.</li>
+                        </ul><br>
+                    <li class="lista_texto_padrao">Acesso Restrito:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">O acesso aos dados do servidor e do banco de dados é restrito apenas ao pessoal autorizado. 
+                                Utilizamos controles de acesso baseados em permissões para garantir que apenas indivíduos qualificados possam modificar ou 
+                                visualizar dados sensíveis.</li>
+                        </ul><br>
+                    <li class="lista_texto_padrao">Monitoramento:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Implementaremos sistemas de monitoramento contínuo para detectar e responder rapidamente a atividades 
+                                suspeitas ou não autorizadas. Logs de auditoria serão mantidos para revisar o acesso e as alterações aos dados.</li>
+                        </ul><br>
+                    <li class="lista_texto_padrao">Backup Regular:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao"> Backups incrementais são realizados após cada alteração significativa e um backup completo semanalmente. 
+                                Isso assegura que temos cópias de segurança atualizadas que podem ser restauradas em caso de falha ou perda de dados.</li>
+                        </ul><br>
+                    <li class="lista_texto_padrao">Procedimentos de Recuperação:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Desenvolveremos procedimentos claros e documentados para a recuperação de dados, incluindo a restauração de 
+                                backups e resposta a incidentes de segurança.</li>
+                        </ul><br>
+                    <li class="lista_texto_padrao">Treinamento:</li>
+                        <ul class="lista_padrao">
+                            <li class="lista_texto_padrao">Recomendamos treinamento contínuo sobre práticas de segurança, incluindo o reconhecimento e a prevenção de 
+                                ameaças cibernéticas.</li>
+                        </ul><br>
+                </ol><br>
+
+                <p>&emsp; Essas políticas e medidas de segurança foram implementadas para proteger os dados dos usuários e garantir a integridade e disponibilidade dos 
+                    serviços.</p>
 
                 <h2><span class="span_laranja">TO DO: Teste com Zed Attack Proxy (ZAP)</span></h2>
 
