@@ -328,11 +328,11 @@ ol
 {
     .stars_background_WDV_2 
     {
-        height: 1885%;
+        height: 2087%;
     } 
     .layer_4
     {
-        height: 1885%;
+        height: 2087%;
     }
 }
 
@@ -1655,7 +1655,9 @@ ol
 /* ~ Wanderson ~ */
 /* ^ 19/06/2024 ^ */
 
-.fluxograma
+.fluxograma,
+.modelo_conceitual,
+.modelo_logico
 {
     width: 75%;
     box-shadow: 1px 1px 20px 0 #009ff0;
