@@ -3385,15 +3385,18 @@ dialog
     align-content: center;
     align-self: center;
     text-align: center;
+    object-fit: cover;
     width: 30%;
     margin: 2%;
     filter: drop-shadow(2px 2px 1px black);
 }
 
-.imagem_prod_card 
+.imagem_prod_card /* ^ Ajustar para FULLHD^ */
 {
-    width: 100%;
-    filter: drop-shadow(2px 2px 1px black);
+    width: 107.8%;
+    margin-top: -3.6%;
+    margin-left: -3.8%;
+    filter: drop-shadow(3px 3px 3px black);
     z-index: 8;
 }
 
