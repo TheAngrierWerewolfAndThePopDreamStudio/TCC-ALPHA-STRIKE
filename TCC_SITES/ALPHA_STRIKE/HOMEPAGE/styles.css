@@ -428,13 +428,12 @@ body
     z-index: 1;
     position: relative;
     box-shadow: 5px 5px 2px black;
-    transition: 1.2s;
 }
 
 .card_F_1:hover 
 {
     transform: rotateY(180deg);
-    transition: 1.2s;
+    transition: 0.8s;
 }
 
 .card_F_1::before 
@@ -1415,14 +1414,6 @@ body
     }
 }
 
-@media screen and (max-width: 1400px) 
-{
-    .Features_2 
-    {
-        height: 115vh;
-    }
-}
-
 .Titulo_F_2 
 {
     margin-top: 30px;
@@ -1558,7 +1549,7 @@ a
     justify-content: flex-end;
 }
 
-.btn_Produto_F_card
+.btn_Produto_F_card_F
 {
     height: 45px;
     width: 100%;
@@ -1577,7 +1568,7 @@ a
     transition: 0.5s;
 }
 
-.btn_Produto_F_card:hover
+.btn_Produto_F_card_F:hover
 {
     background-color: #fe5001;
 }
@@ -1594,6 +1585,45 @@ a
     font-size: large;
     letter-spacing: 3px;
     filter: drop-shadow(1px 1px 3px black);
+}
+
+@media screen and (max-width: 1400px) 
+{
+    .Features_2 
+    {
+        height: 115vh;
+    }
+    
+    .Prod_card_nome_F
+    {
+        width: 107.8%;
+        margin: 0;
+        margin-left: -3.8%;
+        padding: 2.5%;
+        text-decoration: none;
+        color: #d2541f;
+        font-weight: bolder;
+        font-size: larger;
+        background-color: #222;
+    }
+    .Prod_card_valor_F
+    {
+        width: 107.8%;
+        margin: 0;
+        margin-left: -3.8%;
+        padding: 2%;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: larger;
+        background-color: #555;
+    }
+    .btn_Produto_F_card_F
+    {
+        width: 107.8%;
+        margin: 0;
+        margin-left: -3.8%;
+    }
 }
 
 /* * 11 ---------------------------------------------------- Hero_3 ----------------------------------------------------- * */
