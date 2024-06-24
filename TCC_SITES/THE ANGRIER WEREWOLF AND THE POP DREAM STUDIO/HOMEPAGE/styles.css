@@ -262,11 +262,11 @@ ol
 {
     .stars_background_DI_2 
     {
-        height: 748%;
+        height: 776%;
     } 
     .layer_S_2 
     {
-        height: 748%;
+        height: 776%;
     }
 }
 
@@ -278,7 +278,7 @@ ol
     } 
     .layer_S_2 
     {
-        height: 11%;
+        height: 1168%;
     }
 }
 
@@ -289,11 +289,11 @@ ol
 {
     .stars_background_WDS_2 
     {
-        height: 2092%;
+        height: 2171%;
     } 
     .layer_3 
     {
-        height: 2092%;
+        height: 2171%;
     }
 }
 
@@ -316,11 +316,11 @@ ol
 {
     .stars_background_WDV_2 
     {
-        height: 943%;
+        height: 1494%;
     } 
     .layer_4
     {
-        height: 943%;
+        height: 1494%;
     }
 }
 
@@ -328,11 +328,11 @@ ol
 {
     .stars_background_WDV_2 
     {
-        height: 1885%;
+        height: 2087%;
     } 
     .layer_4
     {
-        height: 1885%;
+        height: 2087%;
     }
 }
 
@@ -1655,7 +1655,9 @@ ol
 /* ~ Wanderson ~ */
 /* ^ 19/06/2024 ^ */
 
-.fluxograma
+.fluxograma,
+.modelo_conceitual,
+.modelo_logico
 {
     width: 75%;
     box-shadow: 1px 1px 20px 0 #009ff0;
